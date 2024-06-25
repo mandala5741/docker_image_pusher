@@ -1,16 +1,17 @@
-#指定AMD架构镜像
---platform=linux/amd64 nginx:latest
---platform=linux/amd64 mysql:5.7.44
---platform=linux/amd64 minio/minio:RELEASE.2022-01-04T07-41-07Z
---platform=linux/amd64 minio/minio:latest
---platform=linux/amd64 postgres:latest
---platform=linux/amd64 gogs/gogs:latest
---platform=linux/amd64 sonatype/nexus3:latest
---platform=linux/amd64 openjdk:17
---platform=linux/amd64 openjdk:21
-#指定ARM架构镜像
---platform=linux/arm64 nginx:latest
---platform=linux/arm64 minio/minio:latest
---platform=linux/arm64 redis:latest
---platform=linux/arm64 openjdk:17
---platform=linux/arm64 openjdk:21
+#指定AMD架构镜像区域
+nginx:latest
+mysql:5.7.44
+minio/minio:RELEASE.2022-01-04T07-41-07Z
+minio/minio:latest
+postgres:latest
+gogs/gogs:latest
+sonatype/nexus3:latest
+openjdk:17
+openjdk:21
+#指定ARM架构镜像区域
+--platform=linux/arm64
+nginx:latest
+minio/minio:latest
+redis:latest
+openjdk:17
+openjdk:21
