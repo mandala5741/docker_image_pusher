@@ -9,9 +9,8 @@ sonatype/nexus3:latest
 openjdk:17
 openjdk:21
 #指定ARM架构镜像区域
---platform=linux/arm64
-nginx:latest
-minio/minio:latest
-redis:latest
-openjdk:17
-openjdk:21
+--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 minio/minio:latest
+--platform=linux/arm64 redis:latest
+--platform=linux/arm64 openjdk:17
+--platform=linux/arm64 openjdk:21
