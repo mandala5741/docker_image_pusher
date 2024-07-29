@@ -15,4 +15,4 @@ openjdk:21
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 openjdk:17
 --platform=linux/arm64 openjdk:21
---platform=linux/arm64 fastdfs
+--platform=linux/arm64 season/fastdfs
