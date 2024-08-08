@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-apache/dolphinscheduler:3.2.2
+apache/dolphinscheduler
 nginx:latest
 zookeeper
 mysql:5.7.44
