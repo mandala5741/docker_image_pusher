@@ -1,5 +1,7 @@
 #指定AMD架构镜像区域
 apache/dolphinscheduler
+apache/doris:fe-3.0.0
+apache/doris:be-3.0.0
 nginx:latest
 zookeeper
 mysql:5.7.44
