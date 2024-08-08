@@ -1,6 +1,7 @@
 #指定AMD架构镜像区域
 apache/dolphinscheduler:1.3.9
 nginx:latest
+zookeeper
 mysql:5.7.44
 minio/minio:RELEASE.2022-01-04T07-41-07Z
 minio/minio:latest
