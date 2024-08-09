@@ -1,7 +1,7 @@
 #指定AMD架构镜像区域
 python:3.9-slim
 apache/dolphinscheduler
-google_containers/registry:latest
+registry:latest
 nginx:latest
 zookeeper
 mysql:5.7.44
