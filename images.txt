@@ -10,6 +10,7 @@ postgres:latest
 gogs/gogs:latest
 sonatype/nexus3:latest
 eipwork/kuboard:v3.5.2.7
+openjdk:8-jre                                                       
 openjdk:17
 openjdk:21
 #指定ARM架构镜像区域
