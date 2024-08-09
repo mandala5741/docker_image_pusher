@@ -4,6 +4,7 @@ apache/dolphinscheduler
 nginx:latest
 zookeeper
 mysql:5.7.44
+mysql:8.0.32
 minio/minio:RELEASE.2022-01-04T07-41-07Z
 minio/minio:latest
 postgres:latest
