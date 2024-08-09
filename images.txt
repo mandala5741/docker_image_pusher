@@ -3,6 +3,8 @@ python:3.9-slim
 apache/dolphinscheduler
 registry:latest
 nginx:latest
+redis:6.2.6
+redis:latest
 zookeeper
 mysql:5.7.44
 mysql:8.0.32
