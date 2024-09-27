@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
 python:3.9-slim
+portainer/portainer-ce:latest
 jenkins/jenkins:2.401.1
 apache/rocketmq:5.2.0
 apache/dolphinscheduler-standalone-server:3.2.0
