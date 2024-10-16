@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
 apacherocketmq/rocketmq-dashboard:latest
+qdrant/qdrant:latest
 python:3.9-slim
 apache/rocketmq:5.1.4
 uozi/nginx-ui:latest
