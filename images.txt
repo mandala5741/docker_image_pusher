@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+nginx:1.21.0
 apacherocketmq/rocketmq-dashboard:latest
 qdrant/qdrant:latest
 calico/node:v3.27.3
