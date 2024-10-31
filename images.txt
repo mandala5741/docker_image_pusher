@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-biarms/mysql:5.7.44-linux-arm64v8
+arm64v8/mysql:5.7.44
 nginx:alpine
 tiangolo/nginx-rtmp
 apacherocketmq/rocketmq-dashboard:latest
