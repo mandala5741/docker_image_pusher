@@ -36,5 +36,6 @@ openjdk:21
 --platform=linux/arm64 nginx:latest
 --platform=linux/arm64 minio/minio:latest
 --platform=linux/arm64 redis:latest
+--platform=linux/arm64 openjdk:8
 --platform=linux/arm64 openjdk:17
 --platform=linux/arm64 openjdk:21
