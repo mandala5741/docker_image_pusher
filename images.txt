@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+biarms/mysql:5.7.44-linux-arm64v8
 nginx:alpine
 tiangolo/nginx-rtmp
 apacherocketmq/rocketmq-dashboard:latest
@@ -33,7 +34,6 @@ openjdk:17
 openjdk:21
 #指定ARM架构镜像区域
 --platform=linux/arm64 nginx:latest
---platform=linux/arm64 mysql:5.7.44
 --platform=linux/arm64 minio/minio:latest
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 openjdk:17
