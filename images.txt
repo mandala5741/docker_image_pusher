@@ -33,6 +33,7 @@ openjdk:17
 openjdk:21
 #指定ARM架构镜像区域
 --platform=linux/arm64 nginx:latest
+--platform=linux/arm64 mysql:5.7.44
 --platform=linux/arm64 minio/minio:latest
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 openjdk:17
