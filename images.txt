@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
 nginx:1.26-alpine
+--platform linux/arm64 openjdk:11-jre-slim
 biarms/mysql:5.7.30-linux-arm64v8
 nginx:alpine
 tiangolo/nginx-rtmp
