@@ -1,6 +1,6 @@
 #指定AMD架构镜像区域
 nginx:1.26-alpine
---platform=linux/arm64 rocketmq:5.2.0
+--platform=linux/arm64 apache/rocketmq:5.2.0
 biarms/mysql:5.7.30-linux-arm64v8
 nginx:alpine
 tiangolo/nginx-rtmp
