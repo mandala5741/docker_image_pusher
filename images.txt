@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
---platform=linux/arm64 candice0630/rocketmq:5.3.0-alpine
+--platform=linux/arm64 candice0630/rocketmq:5.2.0-alpine
 #指定ARM架构镜像区域
 --platform=linux/arm64 nginx:latest
 --platform=linux/arm64 minio/minio:latest
