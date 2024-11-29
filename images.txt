@@ -1,7 +1,4 @@
 #指定AMD架构镜像区域
---platform=linux/arm64 apache/rocketmq:5.2.0
+
 #指定ARM架构镜像区域
 --platform=linux/arm64 nginx:latest
---platform=linux/arm64 minio/minio:latest
---platform=linux/arm64 redis:latest
---platform=linux/arm64 openjdk:17
