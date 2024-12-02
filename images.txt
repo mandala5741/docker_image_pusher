@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
 
 #指定ARM架构镜像区域
+--platform=linux/arm64 arm64v8/rabbitmq:3.8.9-management
 --platform=linux/arm64 nginx:latest
