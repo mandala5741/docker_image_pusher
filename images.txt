@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-
+docker.elastic.co/elasticsearch/elasticsearch:7.17.15
 #指定ARM架构镜像区域
 --platform=linux/arm64 arm64v8/rabbitmq:3.8.9-management
 --platform=linux/arm64 nginx:latest
