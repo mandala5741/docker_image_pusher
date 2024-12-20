@@ -1,4 +1,6 @@
 #指定AMD架构镜像区域
- emqx/emqx:5.7.1
+redis:6.2.16
+redis:7.2.6
+redis:7.4.1
 #指定ARM架构镜像区域
 # --platform=linux/arm64 minio/minio:RELEASE.2023-03-20T20-16-18Z
