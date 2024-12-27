@@ -1,4 +1,4 @@
 #指定AMD架构镜像区域
-thankwhite/vastbase_g100:2.2.15
+rabbitmq:latest
 #指定ARM架构镜像区域
 # --platform=linux/arm64 minio/minio:RELEASE.2023-03-20T20-16-18Z
