@@ -1,4 +1,4 @@
 #指定AMD架构镜像区域
 redis:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 emqx/emqx:5.7.1
+#--platform=linux/arm64 emqx/emqx:5.7.1
