@@ -1,4 +1,4 @@
 #指定AMD架构镜像区域
-redis:latest
+# redis:latest
 #指定ARM架构镜像区域
-#--platform=linux/arm64 
+--platform=linux/arm64 redis:latest
