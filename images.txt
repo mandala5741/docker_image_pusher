@@ -7,4 +7,3 @@
 delron/fastdfs:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 redis:latest
---platform=linux/arm64 delron/fastdfs:latest
