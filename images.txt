@@ -1,8 +1,10 @@
 #指定AMD架构镜像区域
-nginx:latest
-minio/minio:latest
+#nginx:latest
+#minio/minio:latest
 redis:latest
-openjdk:17
-openjdk:21
+#openjdk:17
+#openjdk:21
+delron/fastdfs:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 redis:latest
+--platform=linux/arm64 delron/fastdfs:latest
