@@ -1,7 +1,7 @@
 #指定AMD架构镜像区域
 #nginx:latest
 #minio/minio:latest
-redis:latest
+#redis:latest
 #openjdk:17
 #openjdk:21
 delron/fastdfs:latest
