@@ -4,6 +4,7 @@
 #redis:latest
 #openjdk:17
 #openjdk:21
-delron/fastdfs:latest
+#delron/fastdfs:latest
+eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 redis:latest
