@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
 nginx:latest
+apache/dolphinscheduler:latest
 #minio/minio:latest
 #redis:latest
 #openjdk:17
