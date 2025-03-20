@@ -1,13 +1,13 @@
 #指定AMD架构镜像区域
-#nginx:latest
+nginx:latest
 #apache/dolphinscheduler:latest
-#minio/minio:latest
-#redis:latest
-#openjdk:17
+minio/minio:latest
+redis:latest
+openjdk:17
 #openjdk:21
 #openjdk:11
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 redis:latest
---platform=linux/arm64 mysql:5.7.44
+#--platform=linux/arm64 mysql:5.7.44
