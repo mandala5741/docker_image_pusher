@@ -1,11 +1,9 @@
 #指定AMD架构镜像区域
 nginx:latest
-#apache/dolphinscheduler:latest
 minio/minio:latest
 redis:latest
 openjdk:17
-#openjdk:21
-#openjdk:11
+openjdk:21
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
 #指定ARM架构镜像区域
