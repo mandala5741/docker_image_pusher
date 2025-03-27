@@ -3,7 +3,6 @@
 #minio/minio:latest
 #redis:latest
 #openjdk:17
-ubuntu/python
 #openjdk:21
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
