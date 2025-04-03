@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
 #nginx:latest
+redis:latest
 #minio/minio:latest
 #redis:6.2.1
 #openjdk:17
