@@ -10,3 +10,4 @@ redis:6.2.1
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 openjdk:17
