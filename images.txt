@@ -1,8 +1,10 @@
 #指定AMD架构镜像区域
 #nginx:latest
-redis:latest
+#redis:latest
 #minio/minio:latest
-guiji2025/fish-speech-ziming
+guiji2025/heygem.ai
+guiji2025/fun-asr
+#guiji2025/fish-speech-ziming
 #redis:6.2.1
 #openjdk:17
 #openjdk:21
@@ -11,5 +13,5 @@ guiji2025/fish-speech-ziming
 #指定ARM架构镜像区域
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
---platform=linux/arm64 nginx:latest
---platform=linux/arm64 openjdk:17
+#--platform=linux/arm64 nginx:latest
+#--platform=linux/arm64 openjdk:17
