@@ -2,8 +2,8 @@
 #nginx:latest
 #redis:latest
 #minio/minio:latest
-guiji2025/heygem.ai
-guiji2025/fun-asr
+#guiji2025/heygem.ai
+#guiji2025/fun-asr
 #guiji2025/fish-speech-ziming
 #redis:6.2.1
 #openjdk:17
