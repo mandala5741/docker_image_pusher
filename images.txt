@@ -1,7 +1,8 @@
 #指定AMD架构镜像区域
+rustdesk/rustdesk-server:latest
 #nginx:latest
 #redis:latest
-tdengine/tdengine:latest
+#tdengine/tdengine:latest
 #minio/minio:latest
 #guiji2025/heygem.ai
 #guiji2025/fun-asr
@@ -16,6 +17,6 @@ tdengine/tdengine:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
---platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
+#--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-python-pg:python3.11-pg15.8
