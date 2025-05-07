@@ -1,7 +1,8 @@
 #指定AMD架构镜像区域
 rustdesk/rustdesk-server:latest
 #nginx:latest
-#redis:latest
+redis:7.4.2
+redis:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
 #guiji2025/heygem.ai
