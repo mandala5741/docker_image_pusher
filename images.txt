@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-opengauss/opengauss:latest
+rabbitmq:3.8.9-management
+#opengauss/opengauss:latest
 #rustdesk/rustdesk-server:latest
 #nginx:latest
 #redis:7.4.2
