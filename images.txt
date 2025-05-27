@@ -2,9 +2,9 @@
 #rabbitmq:3.8.9-management
 #opengauss/opengauss:latest
 #rustdesk/rustdesk-server:latest
-#nginx:latest
+nginx:latest
 #redis:7.4.2
-#redis:latest
+redis:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
 #guiji2025/heygem.ai
