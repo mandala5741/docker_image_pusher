@@ -3,7 +3,6 @@
 #opengauss/opengauss:latest
 #rustdesk/rustdesk-server:latest
 #oracleinanutshell/oracle-xe-11g
-oracleinanutshell/oracle-xe-11g:18.04-apex
 #nginx:latest
 #redis:7.4.2
 #redis:latest
