@@ -1,8 +1,6 @@
 #指定AMD架构镜像区域
 #rabbitmq:3.8.9-management
 #opengauss/opengauss:latest
-#rustdesk/rustdesk-server:latest
-helowin/oracle_11g
 #nginx:latest
 #redis:7.4.2
 #redis:latest
@@ -12,7 +10,6 @@ helowin/oracle_11g
 #guiji2025/heygem.ai
 #guiji2025/fun-asr
 #guiji2025/fish-speech-ziming
-#redis:6.2.1
 #openjdk:17
 #openjdk:21
 #delron/fastdfs:latest
