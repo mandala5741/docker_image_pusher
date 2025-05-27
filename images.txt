@@ -3,7 +3,7 @@
 #opengauss/opengauss:latest
 #nginx:latest
 #redis:7.4.2
-garnetio/garnet:latest
+garnetnetworks/garnet
 #redis:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
