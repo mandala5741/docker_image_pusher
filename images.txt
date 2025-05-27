@@ -16,7 +16,7 @@
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 toyangdon/dm:8-arm64
+#--platform=linux/arm64 toyangdon/dm:8-arm64
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
