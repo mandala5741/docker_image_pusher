@@ -4,7 +4,8 @@
 #rustdesk/rustdesk-server:latest
 nginx:latest
 #redis:7.4.2
-redis:latest
+#redis:latest
+eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
 #guiji2025/heygem.ai
