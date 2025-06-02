@@ -2,6 +2,7 @@
 #rabbitmq:3.8.9-management
 #opengauss/opengauss:latest
 #nginx:latest
+apache/rocketmq:5.2.0
 #redis:7.4.2
 #pig4cloud/garnet:latest
 #redis:latest
