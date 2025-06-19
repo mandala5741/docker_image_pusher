@@ -1,7 +1,7 @@
 #指定AMD架构镜像区域
 #rabbitmq:3.8.9-management
 #opengauss/opengauss:latest
-oliver006/redis_exporter:v1.45.0
+#oliver006/redis_exporter:v1.45.0
 #nginx:latest
 #apache/rocketmq:5.2.0
 #redis:7.4.2
@@ -19,7 +19,7 @@ oliver006/redis_exporter:v1.45.0
 #eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 toyangdon/dm:8-arm64
-#--platform=linux/arm64 redis:latest
+--platform=linux/arm64 redis:6.2.1
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
