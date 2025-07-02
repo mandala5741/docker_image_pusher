@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-emqx/mqttx-web
+#emqx/mqttx-web
+emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
