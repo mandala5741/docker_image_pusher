@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-ghcr.io/ofkm/arcane:latest
+emqx/mqttx-web
+#ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
 #oliver006/redis_exporter:v1.45.0
