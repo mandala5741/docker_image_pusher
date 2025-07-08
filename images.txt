@@ -11,6 +11,7 @@
 #apache/rocketmq:5.2.0
 #redis:7.4.5
 #redis:6.2.19
+redis:7.2.10
 #pig4cloud/garnet:latest
 #redis:latest
 #eqalpha/keydb:latest
@@ -28,8 +29,8 @@ eqalpha/keydb:latest
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:6.2.19
---platform=linux/arm64 redis:7.4.5
---platform=linux/arm64 redis:latest
+--platform=linux/arm64 redis:7.2.10
+#--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
