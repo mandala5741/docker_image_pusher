@@ -1,17 +1,17 @@
 #指定AMD架构镜像区域
-elasticsearch:8.17.4
+#elasticsearch:8.17.4
 #rustfs/rustfs:latest
 #emqx/mqttx-web
-emqx/mqttx-cli
+#emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
 #oliver006/redis_exporter:v1.45.0
-#nginx:latest
+nginx:latest
 #apache/rocketmq:5.2.0
 #redis:7.4.2
 #pig4cloud/garnet:latest
-#redis:latest
+redis:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
@@ -21,11 +21,11 @@ emqx/mqttx-cli
 #openjdk:17
 #openjdk:21
 #delron/fastdfs:latest
-#eqalpha/keydb:latest
+eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 toyangdon/dm:8-arm64
 #--platform=linux/arm64 rustfs/rustfs:latest
---platform=linux/arm64 elasticsearch:8.17.4
+#--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:6.2.1
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
