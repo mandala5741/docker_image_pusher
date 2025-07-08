@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-rustfs/rustfs:latest
+elasticsearch:8.18.3
+#rustfs/rustfs:latest
 #emqx/mqttx-web
 emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
@@ -23,7 +24,8 @@ emqx/mqttx-cli
 #eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 toyangdon/dm:8-arm64
---platform=linux/arm64 rustfs/rustfs:latest
+#--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 elasticsearch:8.18.3
 #--platform=linux/arm64 redis:6.2.1
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
