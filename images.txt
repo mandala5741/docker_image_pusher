@@ -7,11 +7,12 @@
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
 #oliver006/redis_exporter:v1.45.0
-nginx:latest
+#nginx:latest
 #apache/rocketmq:5.2.0
-#redis:7.4.2
+redis:7.4.5
+redis:6.2.19
 #pig4cloud/garnet:latest
-redis:latest
+#redis:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
@@ -26,7 +27,7 @@ eqalpha/keydb:latest
 #--platform=linux/arm64 toyangdon/dm:8-arm64
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
-#--platform=linux/arm64 redis:6.2.1
+--platform=linux/arm64 redis:6.2.19
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
