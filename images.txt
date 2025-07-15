@@ -1,6 +1,11 @@
 #指定AMD架构镜像区域
-hn4930/go-view:latest
-hn4930/go-view-serve:latest
+#hn4930/go-view:latest
+#hn4930/go-view-serve:latest
+
+guiji2025/fun-asr
+guiji2025/fish-speech-ziming
+guiji2025/heygem.ai
+
 #elasticsearch:8.17.4
 #rustfs/rustfs:latest
 #emqx/mqttx-web
