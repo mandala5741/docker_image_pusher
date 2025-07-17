@@ -37,6 +37,7 @@ redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
+--platform=linux/arm64  amazoncorretto:8
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
