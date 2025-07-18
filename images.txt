@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+kestra/kestra:latest
 #thankwhite/vastbase_g100:2.2.15
 #hn4930/go-view:latest
 #hn4930/go-view-serve:latest
@@ -33,11 +34,12 @@
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:6.2.19
 #--platform=linux/arm64 redis:7.2.10
+--platform=linux/arm64  kestra/kestra:latest
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
---platform=linux/arm64  amazoncorretto:8
+#--platform=linux/arm64  amazoncorretto:8
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
