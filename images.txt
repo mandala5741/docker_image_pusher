@@ -1,4 +1,7 @@
 #指定AMD架构镜像区域
+#guiji2025/fun-asr
+#guiji2025/fish-speech-ziming
+#guiji2025/heygem.ai
 #kestra/kestra:latest
 #thankwhite/vastbase_g100:2.2.15
 #hn4930/go-view:latest
