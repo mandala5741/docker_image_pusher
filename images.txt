@@ -1,47 +1,28 @@
 #指定AMD架构镜像区域
-#guiji2025/fun-asr
-#guiji2025/fish-speech-ziming
-#guiji2025/heygem.ai
 #kestra/kestra:latest
-#thankwhite/vastbase_g100:2.2.15
-#hn4930/go-view:latest
-#hn4930/go-view-serve:latest
-#elasticsearch:8.17.4
 #rustfs/rustfs:latest
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-#oliver006/redis_exporter:v1.45.0
 nginx:latest
 #apache/rocketmq:5.2.0
-#redis:7.4.5
-#redis:6.2.19
-#redis:7.2.10
-#pig4cloud/garnet:latest
 redis:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
-#guiji2025/heygem.ai
-#guiji2025/fun-asr
-#guiji2025/fish-speech-ziming
 #openjdk:17
 #openjdk:21
 #delron/fastdfs:latest
-#eqalpha/keydb:latest
+eqalpha/keydb:latest
 #指定ARM架构镜像区域
-#--platform=linux/arm64 toyangdon/dm:8-arm64
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
-#--platform=linux/arm64 redis:6.2.19
-#--platform=linux/arm64 redis:7.2.10
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 openjdk:17
-#--platform=linux/arm64  amazoncorretto:8
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
