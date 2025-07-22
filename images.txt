@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
 #kestra/kestra:latest
+rocketmq:5.3.0-arm64
 #thankwhite/vastbase_g100:2.2.15
 #hn4930/go-view:latest
 #hn4930/go-view-serve:latest
@@ -34,7 +35,6 @@
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:6.2.19
 #--platform=linux/arm64 redis:7.2.10
---platform=linux/arm64  rocketmq:5.3.0-arm64
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 nginx:latest
