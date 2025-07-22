@@ -8,7 +8,6 @@
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
-rocketmq:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
 #oliver006/redis_exporter:v1.45.0
