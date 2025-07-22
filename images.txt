@@ -1,6 +1,5 @@
 #指定AMD架构镜像区域
 #kestra/kestra:latest
-rocketmq:5.3.0-arm64
 #thankwhite/vastbase_g100:2.2.15
 #hn4930/go-view:latest
 #hn4930/go-view-serve:latest
@@ -9,16 +8,17 @@ rocketmq:5.3.0-arm64
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
+rocketmq:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
 #oliver006/redis_exporter:v1.45.0
-#nginx:latest
+nginx:latest
 #apache/rocketmq:5.2.0
 #redis:7.4.5
 #redis:6.2.19
 #redis:7.2.10
 #pig4cloud/garnet:latest
-#redis:latest
+redis:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
