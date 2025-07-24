@@ -6,18 +6,20 @@
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-nginx:latest
+#nginx:latest
 #apache/rocketmq:5.2.0
-redis:latest
+#redis:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
 #openjdk:17
 #openjdk:21
+apache/rocketmq:5.3.3
 #delron/fastdfs:latest
 eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64  apache/rocketmq:5.3.3
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
