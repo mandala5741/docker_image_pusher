@@ -14,12 +14,13 @@
 #minio/minio:latest
 #openjdk:17
 #openjdk:21
-apache/rocketmq:5.3.3
+#apache/rocketmq:5.3.3
 #delron/fastdfs:latest
-eqalpha/keydb:latest
+#eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 rustfs/rustfs:latest
---platform=linux/arm64  apache/rocketmq:5.3.3
+#--platform=linux/arm64 apache/rocketmq:5.3.3
+--platform=linux/arm64  postgres:16.4
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
