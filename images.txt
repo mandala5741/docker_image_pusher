@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-gitea/gitea:latest
+oceanbase/oceanbase-ce:latest
+#gitea/gitea:latest
 #kestra/kestra:latest
 #rustfs/rustfs:latest
 #emqx/mqttx-web
@@ -7,7 +8,7 @@ gitea/gitea:latest
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-#nginx:latest
+nginx:latest
 #apache/rocketmq:5.2.0
 #redis:latest
 #eqalpha/keydb:latest
@@ -22,7 +23,8 @@ gitea/gitea:latest
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
---platform=linux/arm64  gitea/gitea:latest
+#--platform=linux/arm64 gitea/gitea:latest
+--platform=linux/arm64  oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
