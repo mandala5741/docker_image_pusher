@@ -1,5 +1,7 @@
 #指定AMD架构镜像区域
-jrottenberg/ffmpeg
+o2oa/o2server
+o2oa/onlyoffice
+#jrottenberg/ffmpeg
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
@@ -9,7 +11,7 @@ jrottenberg/ffmpeg
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-nginx:latest
+#nginx:latest
 #apache/rocketmq:5.2.0
 #redis:latest
 #eqalpha/keydb:latest
@@ -22,7 +24,7 @@ nginx:latest
 #eqalpha/keydb:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 rustfs/rustfs:latest
---platform=linux/arm64 jrottenberg/ffmpeg
+#--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 gitea/gitea:latest
