@@ -1,6 +1,5 @@
 #指定AMD架构镜像区域
-o2oa/o2server
-o2oa/onlyoffice
+o2oa/baseo2server
 #jrottenberg/ffmpeg
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
