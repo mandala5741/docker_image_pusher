@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-o2oa/baseo2server
+#o2oa/baseo2server
 #jrottenberg/ffmpeg
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
@@ -12,7 +12,10 @@ o2oa/baseo2server
 #opengauss/opengauss:latest
 #nginx:latest
 #apache/rocketmq:5.2.0
-#redis:latest
+redis:latest
+skytable/skytable:latest
+bitnami/memcached:latest
+valkey/valkey
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
