@@ -41,8 +41,8 @@
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-python-pg:python3.11-pg15.8
---platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
---platform=linux/arm64 skytable/skytable:latest
---platform=linux/arm64 bitnami/memcached:latest
---platform=linux/arm64 valkey/valkey
---platform=linux/arm64 tdengine/tdengine:latest
+#--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
+#--platform=linux/arm64 skytable/skytable:latest
+#--platform=linux/arm64 bitnami/memcached:latest
+#--platform=linux/arm64 valkey/valkey
+#--platform=linux/arm64 tdengine/tdengine:latest
