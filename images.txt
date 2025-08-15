@@ -12,10 +12,11 @@
 #opengauss/opengauss:latest
 #nginx:latest
 #apache/rocketmq:5.2.0
-redis:latest
-skytable/skytable:latest
-bitnami/memcached:latest
-valkey/valkey
+#redis:latest
+docker.dragonflydb.io/dragonflydb/dragonfly
+#skytable/skytable:latest
+#bitnami/memcached:latest
+#valkey/valkey
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
