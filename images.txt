@@ -21,7 +21,8 @@
 #tdengine/tdengine:latest
 #minio/minio:latest
 #openjdk:17
-mysql:8.4.5
+#mysql:8.4.5
+mysql:8.0.37
 #openjdk:21
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
