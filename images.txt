@@ -24,7 +24,8 @@
 #mysql:8.4.5
 #mysql:8.0.37
 #ksjaay/lunalytics:latest
-polardb/polardb_pg_local_instance
+#polardb/polardb_pg_local_instance
+polardb/polardb-for-mysql:latest
 #openjdk:21
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -43,6 +44,7 @@ polardb/polardb_pg_local_instance
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 mysql:8.4.7
 #--platform=linux/arm64 ksjaay/lunalytics:latest
+--platform=linux/arm64 polardb/polardb-for-mysql:latest
 --platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
 #--platform=linux/arm64 grafana/grafana:latest
