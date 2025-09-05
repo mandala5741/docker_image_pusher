@@ -17,14 +17,15 @@
 #skytable/skytable:latest
 #bitnami/memcached:latest
 #valkey/valkey
-copyparty/ac:latest
+#copyparty/ac:latest
+pubuzhixing/drawnix:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
 #openjdk:17
 #mysql:8.4.5
 #mysql:8.0.37
-apache/kafka-native:latest
+#apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
 #openjdk:21
@@ -48,8 +49,9 @@ apache/kafka-native:latest
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
 #--platform=linux/arm64 grafana/grafana:latest
+--platform=linux/arm64  pubuzhixing/drawnix:latest
 #--platform=linux/arm64 nginx:latest
---platform=linux/arm64 copyparty/ac:latest
+#--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
 #--platform=linux/arm64 jenkins/jenkins
