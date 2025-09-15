@@ -19,7 +19,7 @@
 #valkey/valkey
 #copyparty/ac:latest
 #pubuzhixing/drawnix:latest
-searxng/searxng:2025.7.22-5cbf422
+#searxng/searxng:2025.7.22-5cbf422
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
@@ -31,6 +31,7 @@ searxng/searxng:2025.7.22-5cbf422
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
+ghcr.io/komari-monitor/komari:latest
 #prom/prometheus:latest
 #grafana/grafana:latest
 #指定ARM架构镜像区域
@@ -48,7 +49,8 @@ searxng/searxng:2025.7.22-5cbf422
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
 #--platform=linux/arm64 grafana/grafana:latest
---platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
+#--platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
+--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
