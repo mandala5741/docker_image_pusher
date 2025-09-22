@@ -28,7 +28,7 @@
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
 #openjdk:21
-clickhouse/clickhouse-server
+#clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
@@ -51,7 +51,8 @@ ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 prom/prometheus:latest
 #--platform=linux/arm64 grafana/grafana:latest
 #--platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
---platform=linux/arm64 clickhouse/clickhouse-server
+--platform=linux/arm64 gvenzl/oracle-xe:arm64
+# clickhouse/clickhouse-server
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 copyparty/ac:latest
