@@ -32,7 +32,7 @@
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
 #eqalpha/keydb:latest
-ghcr.io/komari-monitor/komari:latest
+#ghcr.io/komari-monitor/komari:latest
 #prom/prometheus:latest
 #grafana/grafana:latest
 #指定ARM架构镜像区域
@@ -51,8 +51,7 @@ ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 prom/prometheus:latest
 #--platform=linux/arm64 grafana/grafana:latest
 #--platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
---platform=linux/arm64 oracleinanutshell/oracle-xe-11g
-#gvenzl/oracle-xe:arm64
+--platform=linux/arm64 gvenzl/oracle-xe:11
 # clickhouse/clickhouse-server
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 nginx:latest
