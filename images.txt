@@ -51,7 +51,8 @@
 #--platform=linux/arm64 prom/prometheus:latest
 #--platform=linux/arm64 grafana/grafana:latest
 #--platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
---platform=linux/arm64 gvenzl/oracle-xe:11
+#--platform=linux/arm64 gvenzl/oracle-xe:11
+--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
 # clickhouse/clickhouse-server
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 nginx:latest
