@@ -10,7 +10,7 @@
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-#nginx:latest
+nginx:latest
 #apache/rocketmq:5.2.0
 redis:latest
 #docker.dragonflydb.io/dragonflydb/dragonfly
@@ -43,7 +43,7 @@ redis:latest
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
-#--platform=linux/arm64 redis:latest
+--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 mysql:8.4.7
 #--platform=linux/arm64 ksjaay/lunalytics:latest
@@ -55,7 +55,7 @@ redis:latest
 #--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
 # clickhouse/clickhouse-server
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
-#--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
