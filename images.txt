@@ -35,6 +35,7 @@ redis:latest
 #ghcr.io/komari-monitor/komari:latest
 #prom/prometheus:latest
 #grafana/grafana:latest
+docker.1ms.run/openresty/openresty
 #指定ARM架构镜像区域
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
@@ -54,6 +55,7 @@ redis:latest
 #--platform=linux/arm64 gvenzl/oracle-xe:11
 #--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
 # clickhouse/clickhouse-server
+--platform=linux/arm64 docker.1ms.run/openresty/openresty
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 --platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 copyparty/ac:latest
