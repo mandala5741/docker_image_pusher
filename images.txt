@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+elasticsearch:7.17.29
 #o2oa/baseo2server
 #jrottenberg/ffmpeg
 #oceanbase/oceanbase-ce:latest
@@ -36,7 +37,7 @@
 #prom/prometheus:latest
 #grafana/grafana:latest
 #openresty/openresty
-uusec/openresty-manager:latest
+#uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
@@ -57,7 +58,7 @@ uusec/openresty-manager:latest
 #--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
 # clickhouse/clickhouse-server
 # --platform=linux/arm64 openresty/openresty
---platform=linux/arm64 uusec/openresty-manager:latest
+#--platform=linux/arm64 uusec/openresty-manager:latest
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 copyparty/ac:latest
