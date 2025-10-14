@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-elasticsearch:7.17.29
+elasticsearch:7.17.28
 #o2oa/baseo2server
 #jrottenberg/ffmpeg
 #oceanbase/oceanbase-ce:latest
