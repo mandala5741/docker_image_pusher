@@ -11,9 +11,10 @@
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-#nginx:latest
+nginx:latest
+postgres:latest
 #apache/rocketmq:5.2.0
-#redis:latest
+redis:latest
 #docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
 #bitnami/memcached:latest
@@ -23,12 +24,12 @@
 #searxng/searxng:2025.7.22-5cbf422
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
-#minio/minio:latest
+minio/minio:latest
 #openjdk:17
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-#openjdk:21
+openjdk:21
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
