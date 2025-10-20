@@ -11,10 +11,11 @@
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-nginx:latest
-postgres:latest
+#nginx:latest
+sky22333/acg-faka:latest
+#postgres:latest
 #apache/rocketmq:5.2.0
-redis:latest
+#redis:latest
 #docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
 #bitnami/memcached:latest
@@ -24,12 +25,12 @@ redis:latest
 #searxng/searxng:2025.7.22-5cbf422
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
-minio/minio:latest
+#minio/minio:latest
 #openjdk:17
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-openjdk:21
+#openjdk:21
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -57,8 +58,9 @@ openjdk:21
 #--platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
 #--platform=linux/arm64 gvenzl/oracle-xe:11
 #--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
-# clickhouse/clickhouse-server
-# --platform=linux/arm64 openresty/openresty
+#--platform=linux/arm64 clickhouse/clickhouse-server
+#--platform=linux/arm64 openresty/openresty
+--platform=linux/arm64 sky22333/acg-faka:latest
 #--platform=linux/arm64 uusec/openresty-manager:latest
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 nginx:latest
