@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-eipwork/kuboard::v3.5.2.9
+eipwork/kuboard:v3.5.2.9
 #calico/node:v3.27.3
 #calico/kube-controllers:v3.27.3
 #calico/cni:v3.27.3
