@@ -1,7 +1,8 @@
 #指定AMD架构镜像区域
-calico/node:v3.27.3
-calico/kube-controllers:v3.27.3
-calico/cni:v3.27.3
+eipwork/kuboard::v3.5.2.9
+#calico/node:v3.27.3
+#calico/kube-controllers:v3.27.3
+#calico/cni:v3.27.3
 #elasticsearch:7.17.28
 #o2oa/baseo2server
 #jrottenberg/ffmpeg
