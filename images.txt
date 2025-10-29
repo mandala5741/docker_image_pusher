@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-eipwork/kuboard:v3.5.2.9
+#eipwork/kuboard:v3.5.2.9
 #calico/node:v3.27.3
 #calico/kube-controllers:v3.27.3
 #calico/cni:v3.27.3
@@ -15,11 +15,11 @@ eipwork/kuboard:v3.5.2.9
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-#nginx:latest
+nginx:latest
 #ghcr.io/sky22333/acg-faka:latest
 #postgres:latest
 #apache/rocketmq:5.2.0
-#redis:latest
+redis:latest
 #docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
 #bitnami/memcached:latest
@@ -53,7 +53,7 @@ eipwork/kuboard:v3.5.2.9
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
-#--platform=linux/arm64 redis:latest
+--platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 mysql:8.4.7
 #--platform=linux/arm64 ksjaay/lunalytics:latest
@@ -67,7 +67,7 @@ eipwork/kuboard:v3.5.2.9
 #--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 uusec/openresty-manager:latest
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
-#--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
