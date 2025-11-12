@@ -54,7 +54,7 @@ valkey/valkey
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 redis:latest
-#--platform=linux/arm64 mysql:5.7.44
+--platform=linux/arm64 mysql:5.7.44
 #--platform=linux/arm64 mysql:8.4.7
 #--platform=linux/arm64 ksjaay/lunalytics:latest
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
