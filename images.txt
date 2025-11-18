@@ -35,6 +35,7 @@ redis:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
 #openjdk:21
+lampon/omnibox:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -51,6 +52,7 @@ redis:latest
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
 --platform=linux/arm64 postgres:latest
+--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
