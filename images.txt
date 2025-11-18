@@ -15,7 +15,8 @@
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
-tosone/sigma:nightly-alpine
+#tosone/sigma:nightly-alpine
+frangoteam/fuxa:latest
 nginx:latest
 #ghcr.io/sky22333/acg-faka:latest
 #postgres:latest
@@ -53,6 +54,7 @@ lampon/omnibox:latest
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
 --platform=linux/arm64  tosone/sigma:nightly-alpine
+--platform=linux/arm64  frangoteam/fuxa:latest
 #--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 --platform=linux/arm64 /omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
