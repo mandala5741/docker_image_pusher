@@ -6,7 +6,6 @@
 #elasticsearch:7.17.28
 #o2oa/baseo2server
 #jrottenberg/ffmpeg
-docker.1ms.run/1555904/solara-music:latest
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
@@ -17,7 +16,7 @@ docker.1ms.run/1555904/solara-music:latest
 #rabbitmq:3.8.9
 #opengauss/opengauss:latest
 #tosone/sigma:nightly-alpine
-frangoteam/fuxa:latest
+#frangoteam/fuxa:latest
 nginx:latest
 #ghcr.io/sky22333/acg-faka:latest
 #postgres:latest
@@ -38,7 +37,7 @@ redis:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
 #openjdk:21
-lampon/omnibox:latest
+#lampon/omnibox:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -54,7 +53,6 @@ lampon/omnibox:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
---platform=linux/arm64  docker.1ms.run/1555904/solara-music:latest
 #--platform=linux/arm64  frangoteam/fuxa:latest
 #--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 --platform=linux/arm64 /omnibox:latest
@@ -63,7 +61,7 @@ lampon/omnibox:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
 --platform=linux/arm64 redis:latest
 #--platform=linux/arm64 mysql:5.7.44
-#--platform=linux/arm64 mysql:8.4.7
+--platform=linux/arm64 mysql:8.5.4
 #--platform=linux/arm64 ksjaay/lunalytics:latest
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
