@@ -6,6 +6,7 @@
 #elasticsearch:7.17.28
 #o2oa/baseo2server
 #jrottenberg/ffmpeg
+docker.1ms.run/1555904/solara-music:latest
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
@@ -53,8 +54,8 @@ lampon/omnibox:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
---platform=linux/arm64  tosone/sigma:nightly-alpine
---platform=linux/arm64  frangoteam/fuxa:latest
+--platform=linux/arm64  docker.1ms.run/1555904/solara-music:latest
+#--platform=linux/arm64  frangoteam/fuxa:latest
 #--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 --platform=linux/arm64 /omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
