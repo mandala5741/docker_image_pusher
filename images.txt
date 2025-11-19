@@ -6,6 +6,10 @@
 #elasticsearch:7.17.28
 #o2oa/baseo2server
 #jrottenberg/ffmpeg
+zabbix/zabbix-java-gateway
+zabbix/zabbix-server-mysql
+zabbix/zabbix-web-nginx-mysql
+zabbix/zabbix-agent
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
