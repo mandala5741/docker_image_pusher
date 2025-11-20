@@ -2,6 +2,7 @@
 #redis:latest
 #nginx:latest
 #mongo:latest
+mrvautin/adminmongo
 #flowable/flowable-ui:latest
 #drakkan/sftpgo:latest
 #mongo-express:latest
@@ -61,7 +62,8 @@
 #指定ARM架构镜像区域
 #--platform=linux/arm64 mongo:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
---platform linux/arm64 flowable/flowable-ui:6.8.0
+--platform linux/arm64 mrvautin/adminmongo
+#--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
 #--platform=linux/arm64 redis:latest
