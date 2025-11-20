@@ -2,7 +2,7 @@
 #redis:latest
 #nginx:latest
 #mongo:latest
-flowable/flowable-ui:latest
+#flowable/flowable-ui:latest
 #drakkan/sftpgo:latest
 #mongo-express:latest
 #camunda/camunda-bpm-platform:latest
@@ -60,7 +60,8 @@ flowable/flowable-ui:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 mongo:latest
---platform=linux/arm64 flowable/flowable-ui:latest
+#--platform=linux/arm64 flowable/flowable-ui:latest
+--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
 #--platform=linux/arm64 redis:latest
