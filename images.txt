@@ -1,7 +1,8 @@
 #指定AMD架构镜像区域
 #redis:latest
 #nginx:latest
-mongo:latest
+#mongo:latest
+mongo-express:latest
 #camunda/camunda-bpm-platform:latest
 #flowable/flowable-rest:latest
 #eipwork/kuboard:v3.5.2.9
@@ -56,9 +57,10 @@ mongo:latest
 #nacos/nacos-server:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 mongo:latest
---platform=linux/arm64 redis:latest
---platform=linux/arm64 nginx:latest
+#--platform=linux/arm64 mongo:latest
+--platform=linux/arm64 mongo-express:latest
+#--platform=linux/arm64 redis:latest
+#--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 rustfs/rustfs:latest
