@@ -3,7 +3,8 @@
 #nginx:latest
 #mongo:latest
 #godoos/godoos:latest
-wurstmeister/kafka
+#wurstmeister/kafka
+flink
 provectuslabs/kafka-ui:latest
 #dockurr/windows
 #fauria/vsftpd
@@ -70,8 +71,9 @@ provectuslabs/kafka-ui:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
 #--platform linux/arm64 fauria/vsftpd
---platform linux/arm64 wurstmeister/kafka
---platform linux/arm64 provectuslabs/kafka-ui:latest
+--platform linux/arm64 flink
+#--platform linux/arm64 wurstmeister/kafka
+#--platform linux/arm64 provectuslabs/kafka-ui:latest
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
