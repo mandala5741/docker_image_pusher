@@ -3,7 +3,8 @@
 #nginx:latest
 #mongo:latest
 #godoos/godoos:latest
-dockurr/windows
+bitnami/kafka:latest
+#dockurr/windows
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
 #mrvautin/adminmongo
@@ -68,6 +69,7 @@ dockurr/windows
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
 #--platform linux/arm64 fauria/vsftpd
+--platform linux/arm64 bitnami/kafka:latest
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
