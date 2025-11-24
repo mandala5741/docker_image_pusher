@@ -4,8 +4,9 @@
 #mongo:latest
 #godoos/godoos:latest
 #wurstmeister/kafka
-flink
-provectuslabs/kafka-ui:latest
+#flink
+marcobaobao/yt-dlp-webui
+#provectuslabs/kafka-ui:latest
 #dockurr/windows
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
@@ -71,7 +72,7 @@ provectuslabs/kafka-ui:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
 #--platform linux/arm64 fauria/vsftpd
---platform linux/arm64 flink
+#--platform linux/arm64 flink
 #--platform linux/arm64 wurstmeister/kafka
 #--platform linux/arm64 provectuslabs/kafka-ui:latest
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
