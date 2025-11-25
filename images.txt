@@ -65,7 +65,7 @@
 #prom/prometheus:latest
 #grafana/grafana:latest
 #openresty/openresty
-nacos/nacos-server:3.1.0
+nacos/nacos-server:v3.1.0
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 mongo:latest
@@ -107,7 +107,7 @@ nacos/nacos-server:3.1.0
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
---platform=linux/arm64 nacos/nacos-server:3.1.0
+--platform=linux/arm64 nacos/nacos-server:v3.1.0
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
