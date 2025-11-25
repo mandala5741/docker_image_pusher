@@ -5,7 +5,7 @@
 #godoos/godoos:latest
 #wurstmeister/kafka
 #flink
-marcobaobao/yt-dlp-webui
+#marcobaobao/yt-dlp-webui
 #provectuslabs/kafka-ui:latest
 #dockurr/windows
 #fauria/vsftpd
@@ -65,7 +65,7 @@ marcobaobao/yt-dlp-webui
 #prom/prometheus:latest
 #grafana/grafana:latest
 #openresty/openresty
-#nacos/nacos-server:latest
+nacos/nacos-server:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 mongo:latest
@@ -107,7 +107,7 @@ marcobaobao/yt-dlp-webui
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
-#--platform=linux/arm64 nacos/nacos-server:latest
+--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
