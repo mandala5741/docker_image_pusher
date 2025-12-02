@@ -57,7 +57,7 @@
 #polardb/polardb_pg_local_instance
 #openjdk:21
 lampon/omnibox:latest
-katelya77/katelyatv:latest
+ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -89,7 +89,7 @@ katelya77/katelyatv:latest
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 frangoteam/fuxa:latest
 #--platform=linux/arm64 postgres:latest
---platform=linux/arm64 katelya77/katelyatv:latest
+--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
 --platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
