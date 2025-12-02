@@ -56,8 +56,7 @@
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
 #openjdk:21
-openjdk:25-jdk-slim
-#lampon/omnibox:latest
+lampon/omnibox:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -89,7 +88,7 @@ openjdk:25-jdk-slim
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 frangoteam/fuxa:latest
 #--platform=linux/arm64 postgres:latest
-#--platform=linux/arm64 /omnibox:latest
+--platform=linux/arm64 /omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
@@ -108,7 +107,6 @@ openjdk:25-jdk-slim
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
---platform=linux/arm64  openjdk:25-jdk-slim
 #--platform=linux/arm64 nacos/nacos-server:v3.1.0
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
