@@ -8,7 +8,8 @@
 #marcobaobao/yt-dlp-webui
 #provectuslabs/kafka-ui:latest
 #dockurr/windows
-mariadb
+#mariadb
+onlyoffice/documentserver:latest
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
 #mrvautin/adminmongo
@@ -95,7 +96,8 @@ mariadb
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
---platform=linux/arm64 mariadb
+#--platform=linux/arm64 mariadb
+--platform=linux/arm64 onlyoffice/documentserver:latest
 #--platform=linux/arm64 ksjaay/lunalytics:latest
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
