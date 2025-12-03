@@ -8,6 +8,7 @@
 #marcobaobao/yt-dlp-webui
 #provectuslabs/kafka-ui:latest
 #dockurr/windows
+mariadb
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
 #mrvautin/adminmongo
@@ -57,7 +58,7 @@
 #polardb/polardb_pg_local_instance
 #openjdk:21
 #lampon/omnibox:latest
-ghcr.io/katelya77/katelyatv:latest
+#ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
 #delron/fastdfs:latest
@@ -94,7 +95,7 @@ ghcr.io/katelya77/katelyatv:latest
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
---platform=linux/arm64 mysql:5.7.44
+--platform=linux/arm64 mariadb
 #--platform=linux/arm64 ksjaay/lunalytics:latest
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
