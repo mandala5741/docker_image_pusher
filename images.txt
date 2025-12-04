@@ -9,7 +9,7 @@
 #provectuslabs/kafka-ui:latest
 #dockurr/windows
 #mariadb
-onlyoffice/documentserver:latest
+#onlyoffice/documentserver:latest
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
 #mrvautin/adminmongo
@@ -32,7 +32,7 @@ onlyoffice/documentserver:latest
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
-#rustfs/rustfs:latest
+rustfs/rustfs:latest
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
@@ -85,7 +85,7 @@ onlyoffice/documentserver:latest
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
-#--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
@@ -97,7 +97,7 @@ onlyoffice/documentserver:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
 #--platform=linux/arm64 mariadb
---platform=linux/arm64 onlyoffice/documentserver:latest
+#--platform=linux/arm64 onlyoffice/documentserver:latest
 #--platform=linux/arm64 ksjaay/lunalytics:latest
 #--platform=linux/arm64 polardb/polardb_pg_local_instance
 #--platform=linux/arm64 prom/prometheus:latest
