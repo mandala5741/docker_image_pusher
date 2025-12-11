@@ -32,7 +32,7 @@
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
-rustfs/rustfs:latest
+#rustfs/rustfs:latest
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
@@ -69,6 +69,8 @@ rustfs/rustfs:latest
 #grafana/grafana:latest
 #openresty/openresty
 #nacos/nacos-server:v3.1.0
+zookeeper:latest
+kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 mongo:latest
@@ -85,7 +87,9 @@ rustfs/rustfs:latest
 #--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
---platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 zookeeper:latest
+--platform=linux/arm64 kafka:latest
+#--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
