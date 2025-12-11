@@ -70,7 +70,7 @@
 #openresty/openresty
 #nacos/nacos-server:v3.1.0
 zookeeper:latest
-kafka:latest
+wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 mongo:latest
@@ -88,7 +88,7 @@ kafka:latest
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 --platform=linux/arm64 zookeeper:latest
---platform=linux/arm64 kafka:latest
+--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
