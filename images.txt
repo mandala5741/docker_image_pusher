@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+n8nio/n8n:latest
 #redis:latest
 #nginx:latest
 #mongo:latest
@@ -69,12 +70,13 @@
 #grafana/grafana:latest
 #openresty/openresty
 #nacos/nacos-server:v3.1.0
-rustscan/rustscan:latest
-qdnas/flatnas:latest
+#rustscan/rustscan:latest
+#qdnas/flatnas:latest
 #zookeeper:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
+--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 mongo:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
@@ -91,8 +93,8 @@ qdnas/flatnas:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 zookeeper:latest
 #--platform=linux/arm64 wurstmeister/kafka:latest
---platform=linux/arm64 rustscan/rustscan:latest
---platform=linux/arm64 qdnas/flatnas:latest
+#--platform=linux/arm64 rustscan/rustscan:latest
+#--platform=linux/arm64 qdnas/flatnas:latest
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
