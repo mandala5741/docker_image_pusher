@@ -38,7 +38,8 @@
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
-opengauss/opengauss:latest
+webdb/app:2025.06.10 
+#opengauss/opengauss:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
 #ghcr.io/sky22333/acg-faka:latest
@@ -77,7 +78,8 @@ opengauss/opengauss:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 n8nio/n8n:latest
---platform=linux/arm64 opengauss/opengauss:latest
+--platform=linux/arm64 webdb/app:2025.06.10
+#--platform=linux/arm64 opengauss/opengauss:latest
 #--platform=linux/arm64 mongo:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
