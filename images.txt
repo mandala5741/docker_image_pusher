@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-n8nio/n8n:latest
+#n8nio/n8n:latest
 #redis:latest
 #nginx:latest
 #mongo:latest
@@ -38,7 +38,7 @@ n8nio/n8n:latest
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
-#opengauss/opengauss:latest
+opengauss/opengauss:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
 #ghcr.io/sky22333/acg-faka:latest
@@ -76,7 +76,8 @@ n8nio/n8n:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 n8nio/n8n:latest
+#--platform=linux/arm64 n8nio/n8n:latest
+--platform=linux/arm64 opengauss/opengauss:latest
 #--platform=linux/arm64 mongo:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
