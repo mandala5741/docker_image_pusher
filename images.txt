@@ -33,7 +33,8 @@
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
-#rustfs/rustfs:latest
+rustfs/rustfs:latest
+emqx/emqx:latest
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
@@ -78,7 +79,8 @@ webdb/app:2025.06.10
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 n8nio/n8n:latest
---platform=linux/arm64 webdb/app:2025.06.10
+--platform=linux/arm64 emqx/emqx:latest
+#--platform=linux/arm64 webdb/app:2025.06.10
 #--platform=linux/arm64 opengauss/opengauss:latest
 #--platform=linux/arm64 mongo:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
@@ -98,7 +100,7 @@ webdb/app:2025.06.10
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
-#--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
