@@ -1,7 +1,7 @@
 #指定AMD架构镜像区域
 #n8nio/n8n:latest
-#redis:latest
-#nginx:latest
+redis:latest
+nginx:latest
 #mongo:latest
 #godoos/godoos:latest
 #wurstmeister/kafka
@@ -34,7 +34,8 @@
 #gitea/gitea:latest
 #kestra/kestra:latest
 rustfs/rustfs:latest
-emqx/emqx:latest
+#emqx/emqx:latest
+mcr.microsoft.com/mssql/server:2022-latest
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
@@ -79,7 +80,7 @@ webdb/app:2025.06.10
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 n8nio/n8n:latest
---platform=linux/arm64 emqx/emqx:latest
+#--platform=linux/arm64 emqx/emqx:latest
 #--platform=linux/arm64 webdb/app:2025.06.10
 #--platform=linux/arm64 opengauss/opengauss:latest
 #--platform=linux/arm64 mongo:latest
