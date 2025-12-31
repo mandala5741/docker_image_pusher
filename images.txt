@@ -1,8 +1,10 @@
 #指定AMD架构镜像区域
-anoniemerd/prunemate:latest
+#anoniemerd/prunemate:latest
 #n8nio/n8n:latest
 redis:latest
 nginx:latest
+rustfs/rustfs:latest
+plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
 #wurstmeister/kafka
@@ -34,14 +36,13 @@ nginx:latest
 #oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
-rustfs/rustfs:latest
 #emqx/emqx:latest
-mcr.microsoft.com/mssql/server:2022-latest
+#mcr.microsoft.com/mssql/server:2022-latest
 #emqx/mqttx-web
 #emqx/mqttx-cli
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
-webdb/app:2025.06.10 
+#webdb/app:2025.06.10 
 #opengauss/opengauss:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
@@ -102,7 +103,8 @@ webdb/app:2025.06.10
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
---platform=linux/arm64  anoniemerd/prunemate:latest
+--platform=linux/arm64  plexinc/pms-docker:latest
+#--platform=linux/arm64  anoniemerd/prunemate:latest
 --platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
