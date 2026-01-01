@@ -1,6 +1,7 @@
 #指定AMD架构镜像区域
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
+mostafawahied/portracker:latest
 redis:latest
 nginx:latest
 rustfs/rustfs:latest
@@ -103,7 +104,8 @@ plexinc/pms-docker:latest
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
---platform=linux/arm64  plexinc/pms-docker:latest
+--platform=linux/arm64 mostafawahied/portracker:latest
+#--platform=linux/arm64  plexinc/pms-docker:latest
 #--platform=linux/arm64  anoniemerd/prunemate:latest
 --platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
