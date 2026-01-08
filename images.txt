@@ -4,7 +4,7 @@
 #mostafawahied/portracker:latest
 redis:latest
 nginx:latest
-mysql:8.4.7
+#mysql:8.4.7
 rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
@@ -49,7 +49,7 @@ rustfs/rustfs:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
 #ghcr.io/sky22333/acg-faka:latest
-#postgres:latest
+postgres:latest
 #apache/rocketmq:5.2.0
 #docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
@@ -105,8 +105,8 @@ rustfs/rustfs:latest
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
---platform=linux/arm64 mysql:8.4.7
---platform=linux/arm64 mostafawahied/portracker:latest
+#--platform=linux/arm64 mysql:8.4.7
+#--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64  plexinc/pms-docker:latest
 #--platform=linux/arm64  anoniemerd/prunemate:latest
 --platform=linux/arm64 rustfs/rustfs:latest
@@ -114,7 +114,7 @@ rustfs/rustfs:latest
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 frangoteam/fuxa:latest
-#--platform=linux/arm64 postgres:latest
+--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
 #--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
