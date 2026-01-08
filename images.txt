@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-redis/redisinsight:latest
+redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
 #mostafawahied/portracker:latest
