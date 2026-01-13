@@ -52,7 +52,7 @@ rustfs/rustfs:latest
 #ghcr.io/sky22333/acg-faka:latest
 postgres:latest
 #apache/rocketmq:5.2.0
-#docker.dragonflydb.io/dragonflydb/dragonfly
+docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
 #bitnami/memcached:latest
 #valkey/valkey
@@ -116,6 +116,7 @@ postgres:latest
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 frangoteam/fuxa:latest
 --platform=linux/arm64 postgres:latest
+--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
 #--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
 #--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
