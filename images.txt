@@ -2,10 +2,11 @@
 redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
+#mysql:8.4.7
 #mostafawahied/portracker:latest
 redis:latest
 nginx:latest
-#mysql:8.4.7
+postgres:latest
 rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
@@ -50,9 +51,8 @@ rustfs/rustfs:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
 #ghcr.io/sky22333/acg-faka:latest
-postgres:latest
 #apache/rocketmq:5.2.0
-docker.dragonflydb.io/dragonflydb/dragonfly
+#docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
 #bitnami/memcached:latest
 #valkey/valkey
@@ -64,8 +64,7 @@ docker.dragonflydb.io/dragonflydb/dragonfly
 #minio/minio:latest
 #openjdk:17
 #openjdk:21
-ghcr.io/ringcentral-docker/jdk:25.0.1
-ringcentral/jdk:25
+ringcentral/jdk:25.0.1
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
@@ -117,8 +116,8 @@ ringcentral/jdk:25
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 frangoteam/fuxa:latest
---platform=linux/arm64 postgres:latest
---platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
+#--platform=linux/arm64 postgres:latest
+#--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
 #--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
 #--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
@@ -141,8 +140,7 @@ ringcentral/jdk:25
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
 #--platform=linux/arm64 openjdk:21
---platform=linux/arm64 ghcr.io/ringcentral-docker/jdk:25.0.1
---platform=linux/arm64 ringcentral/jdk:25
+--platform=linux/arm64 ringcentral/jdk:25.0.1
 #--platform=linux/arm64 nacos/nacos-server:v3.1.0
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
