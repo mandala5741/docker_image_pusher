@@ -64,7 +64,7 @@ docker.dragonflydb.io/dragonflydb/dragonfly
 #minio/minio:latest
 #openjdk:17
 #openjdk:21
-openjdk:25
+oracle/openjdk:25
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
@@ -140,7 +140,7 @@ openjdk:25
 #--platform=linux/arm64 apache/kafka-native:latest
 #--platform=linux/arm64 openjdk:17
 #--platform=linux/arm64 openjdk:21
---platform=linux/arm64 openjdk:25
+--platform=linux/arm64 oracle/openjdk:25
 #--platform=linux/arm64 nacos/nacos-server:v3.1.0
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
