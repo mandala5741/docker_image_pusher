@@ -7,7 +7,7 @@ redislabs/redisinsight:latest
 redis:latest
 nginx:latest
 postgres:latest
-rustfs/rustfs:latest
+#rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
@@ -64,11 +64,11 @@ rustfs/rustfs:latest
 #minio/minio:latest
 #openjdk:17
 #openjdk:21
-ringcentral/jdk:25.0.1
+#ringcentral/jdk:25.0.1
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-#lampon/omnibox:latest
+lampon/omnibox:latest
 #ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
@@ -108,10 +108,11 @@ ringcentral/jdk:25.0.1
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
 #--platform=linux/arm64 mysql:8.4.7
+--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64  plexinc/pms-docker:latest
 #--platform=linux/arm64  anoniemerd/prunemate:latest
---platform=linux/arm64 rustfs/rustfs:latest
+#--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
