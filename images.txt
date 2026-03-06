@@ -1,13 +1,14 @@
 #指定AMD架构镜像区域
-redislabs/redisinsight:latest 
+openclaw/openclaw:latest
+#redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
 #mysql:8.4.7
 #mostafawahied/portracker:latest
-gogs/gogs:latest
-redis:latest
-nginx:latest
-postgres:latest
+#gogs/gogs:latest
+#redis:latest
+#nginx:latest
+#postgres:latest
 #rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
@@ -95,7 +96,8 @@ postgres:latest
 #--platform linux/arm64 mrvautin/adminmongo
 #--platform linux/arm64 fauria/vsftpd
 #--platform linux/arm64 flink
---platform linux/arm64 gogs/gogs:latest
+--platform linux/arm64 openclaw/openclaw:latest
+#--platform linux/arm64 gogs/gogs:latest
 #--platform linux/arm64 wurstmeister/kafka
 #--platform linux/arm64 provectuslabs/kafka-ui:latest
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
