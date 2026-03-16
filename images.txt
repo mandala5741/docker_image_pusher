@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-calciumion/new-api:latest
+deepanalyze:latest
+#calciumion/new-api:latest
 #ghcr.io/openclaw/openclaw:latest
 #redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
@@ -97,7 +98,8 @@ calciumion/new-api:latest
 #--platform linux/arm64 mrvautin/adminmongo
 #--platform linux/arm64 fauria/vsftpd
 #--platform linux/arm64 flink
---platform linux/arm64 calciumion/new-api:latest
+--platform linux/arm64 deepanalyze:latest
+#--platform linux/arm64 calciumion/new-api:latest
 #--platform linux/arm64 ghcr.io/openclaw/openclaw:latest
 #--platform linux/arm64 gogs/gogs:latest
 #--platform linux/arm64 wurstmeister/kafka
