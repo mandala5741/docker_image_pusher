@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+datart/datart
+#nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 #deepanalyze:latest
 #calciumion/new-api:latest
 #ghcr.io/openclaw/openclaw:latest
