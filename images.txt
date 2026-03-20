@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-datart/datart
+#datart/datart
 #nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 #deepanalyze:latest
 #calciumion/new-api:latest
@@ -91,6 +91,7 @@ datart/datart
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
+--platform=linux/arm64 datart/datart
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
 #--platform=linux/arm64 webdb/app:2025.06.10
