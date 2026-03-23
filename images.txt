@@ -71,6 +71,7 @@
 #openjdk:17
 #openjdk:21
 #ringcentral/jdk:25.0.1
+ghcr.io/graalvm/jdk-community:25.0.1
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
@@ -91,7 +92,7 @@
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 datart/datart
+--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
 #--platform=linux/arm64 webdb/app:2025.06.10
