@@ -71,11 +71,11 @@
 #openjdk:17
 #openjdk:21
 #ringcentral/jdk:25.0.1
-ghcr.io/graalvm/jdk-community:25.0.1
+#ghcr.io/graalvm/jdk-community:25.0.1
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-#lampon/omnibox:latest
+lampon/omnibox:latest
 #ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
@@ -92,7 +92,7 @@ ghcr.io/graalvm/jdk-community:25.0.1
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
+#--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
 #--platform=linux/arm64 webdb/app:2025.06.10
@@ -120,7 +120,7 @@ ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
 #--platform=linux/arm64 mysql:8.4.7
-#--platform=linux/arm64 lampon/omnibox:latest
+--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64  plexinc/pms-docker:latest
 #--platform=linux/arm64  anoniemerd/prunemate:latest
@@ -132,7 +132,6 @@ ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
 #--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
-#--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 gitea/gitea:latest
 #--platform=linux/arm64 oceanbase/oceanbase-ce:latest
 #--platform=linux/arm64 elasticsearch:8.17.4
