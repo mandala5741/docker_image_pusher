@@ -75,7 +75,7 @@
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-lampon/omnibox:latest
+#lampon/omnibox:latest
 #ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
@@ -120,7 +120,7 @@ lampon/omnibox:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
 #--platform=linux/arm64 mysql:8.4.7
---platform=linux/arm64 lampon/omnibox:latest
+#--platform=linux/arm64 lampon/omnibox:latest
 #--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64  plexinc/pms-docker:latest
 #--platform=linux/arm64  anoniemerd/prunemate:latest
