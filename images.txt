@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-quenary/tugtainer:latest
+lbjlaq/antigravity-manager:latest
+#quenary/tugtainer:latest
 #apachewebdav/apachewebdav
 #datart/datart
 #nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
@@ -94,7 +95,7 @@ quenary/tugtainer:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 quenary/tugtainer:latest
+--platform=linux/arm64 lbjlaq/antigravity-manager:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
