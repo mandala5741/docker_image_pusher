@@ -1,5 +1,6 @@
 #指定AMD架构镜像区域
-lbjlaq/antigravity-manager:latest
+registry.cn-shanghai.aliyuncs.com/rustc/easynvr_amd64:latest
+#lbjlaq/antigravity-manager:latest
 #quenary/tugtainer:latest
 #apachewebdav/apachewebdav
 #datart/datart
@@ -95,7 +96,7 @@ lbjlaq/antigravity-manager:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 lbjlaq/antigravity-manager:latest
+--platform=linux/arm64 registry.cn-shanghai.aliyuncs.com/rustc/easynvr_amd64:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
