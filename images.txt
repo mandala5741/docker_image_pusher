@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-nacos/nacos-server:latest
+#nacos/nacos-server:latest
 #lbjlaq/antigravity-manager:latest
 #quenary/tugtainer:latest
 #apachewebdav/apachewebdav
@@ -15,7 +15,7 @@ nacos/nacos-server:latest
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
 #redis:latest
-#nginx:latest
+nginx:latest
 #postgres:latest
 #rustfs/rustfs:latest
 #plexinc/pms-docker:latest
@@ -96,7 +96,7 @@ nacos/nacos-server:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 nacos/nacos-server:latest
+#--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
@@ -117,7 +117,7 @@ nacos/nacos-server:latest
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
 #--platform=linux/arm64 redis:latest
-#--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 zookeeper:latest
