@@ -15,7 +15,7 @@
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
 #redis:latest
-nginx:latest
+#nginx:latest
 #postgres:latest
 #rustfs/rustfs:latest
 #plexinc/pms-docker:latest
@@ -79,7 +79,7 @@ nginx:latest
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-lampon/omnibox:1.3.17
+lampon/omnibox:latest
 #ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
