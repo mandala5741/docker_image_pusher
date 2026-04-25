@@ -17,7 +17,8 @@
 redis:latest
 nginx:latest
 postgres:latest
-#rustfs/rustfs:latest
+openresty/openresty
+rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
@@ -47,7 +48,7 @@ postgres:latest
 #zabbix/zabbix-server-mysql
 #zabbix/zabbix-web-nginx-mysql
 #zabbix/zabbix-agent
-#oceanbase/oceanbase-ce:latest
+oceanbase/oceanbase-ce:latest
 #gitea/gitea:latest
 #kestra/kestra:latest
 #emqx/emqx:latest
@@ -57,7 +58,7 @@ postgres:latest
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #webdb/app:2025.06.10 
-#opengauss/opengauss:latest
+opengauss/opengauss:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
 #ghcr.io/sky22333/acg-faka:latest
@@ -79,7 +80,7 @@ postgres:latest
 #apache/kafka-native:latest
 #ksjaay/lunalytics:latest
 #polardb/polardb_pg_local_instance
-lampon/omnibox:v1.3.17
+#lampon/omnibox:v1.3.17
 #ghcr.io/katelya77/katelyatv:latest
 #clickhouse/clickhouse-server
 #apache/rocketmq:5.3.3
@@ -88,7 +89,6 @@ lampon/omnibox:v1.3.17
 #ghcr.io/komari-monitor/komari:latest
 #prom/prometheus:latest
 #grafana/grafana:latest
-#openresty/openresty
 #nacos/nacos-server:v3.1.0
 #rustscan/rustscan:latest
 #qdnas/flatnas:latest
@@ -118,6 +118,8 @@ lampon/omnibox:v1.3.17
 #--platform=linux/arm64 mongo-express:latest
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
+--platform=linux/arm64 postgres:latest
+--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 zookeeper:latest
@@ -134,7 +136,6 @@ lampon/omnibox:v1.3.17
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
 #--platform=linux/arm64 frangoteam/fuxa:latest
---platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
 #--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
 #--platform=linux/arm64 gitea/gitea:latest
@@ -150,7 +151,6 @@ lampon/omnibox:v1.3.17
 #--platform=linux/arm64 gvenzl/oracle-xe:11
 #--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
 #--platform=linux/arm64 clickhouse/clickhouse-server
-#--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 uusec/openresty-manager:latest
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 copyparty/ac:latest
