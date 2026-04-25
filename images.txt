@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-#nacos/nacos-server:latest
+nacos/nacos-server:latest
 #lbjlaq/antigravity-manager:latest
 #quenary/tugtainer:latest
 #apachewebdav/apachewebdav
