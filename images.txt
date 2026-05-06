@@ -14,11 +14,11 @@ nacos/nacos-server:latest
 #mysql:8.4.7
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
-redis:latest
-nginx:latest
-postgres:latest
-openresty/openresty
-rustfs/rustfs:latest
+#redis:latest
+#nginx:latest
+#postgres:latest
+#openresty/openresty
+#rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
@@ -58,7 +58,7 @@ rustfs/rustfs:latest
 #ghcr.io/ofkm/arcane:latest
 #rabbitmq:3.8.9
 #webdb/app:2025.06.10 
-opengauss/opengauss:latest
+#opengauss/opengauss:latest
 #tosone/sigma:nightly-alpine
 #frangoteam/fuxa:latest
 #ghcr.io/sky22333/acg-faka:latest
@@ -101,7 +101,7 @@ opengauss/opengauss:latest
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform=linux/arm64 emqx/emqx:latest
 #--platform=linux/arm64 webdb/app:2025.06.10
---platform=linux/arm64 opengauss/opengauss:latest
+#--platform=linux/arm64 opengauss/opengauss:latest
 #--platform=linux/arm64 mongo:latest
 #--platform=linux/arm64 flowable/flowable-ui:latest
 #--platform linux/arm64 mrvautin/adminmongo
@@ -131,7 +131,7 @@ opengauss/opengauss:latest
 #--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64  plexinc/pms-docker:latest
 #--platform=linux/arm64  anoniemerd/prunemate:latest
-#--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
