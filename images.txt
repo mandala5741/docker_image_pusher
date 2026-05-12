@@ -100,7 +100,7 @@
 #--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
---platform linux/arm64 alpine:latest
+--platform linux/arm64 ubuntu:22.04
 #--platform linux/arm64 justsong/one-api
 #--platform linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
 #--platform=linux/arm64 emqx/emqx:latest
