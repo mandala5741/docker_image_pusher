@@ -15,9 +15,9 @@
 #mysql:8.4.7
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
-#redis:latest
-#nginx:latest
-#postgres:latest
+redis:latest
+nginx:latest
+postgres:latest
 #openresty/openresty
 #rustfs/rustfs:latest
 #plexinc/pms-docker:latest
@@ -74,7 +74,7 @@
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
-#openjdk:17
+openjdk:17
 #openjdk:21
 #ringcentral/jdk:25.0.1
 #ghcr.io/graalvm/jdk-community:25.0.1
@@ -100,7 +100,7 @@
 #--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
---platform linux/arm64 ubuntu:22.04
+#--platform linux/arm64 ubuntu:22.04
 #--platform linux/arm64 justsong/one-api
 #--platform linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
 #--platform=linux/arm64 emqx/emqx:latest
@@ -120,9 +120,9 @@
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
-#--platform=linux/arm64 redis:latest
-#--platform=linux/arm64 nginx:latest
-#--platform=linux/arm64 postgres:latest
+--platform=linux/arm64 redis:latest
+--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
