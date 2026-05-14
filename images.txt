@@ -74,7 +74,7 @@ postgres:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
-openjdk:17
+#openjdk:17
 #openjdk:21
 #ringcentral/jdk:25.0.1
 #ghcr.io/graalvm/jdk-community:25.0.1
@@ -90,7 +90,6 @@ openjdk:17
 #ghcr.io/komari-monitor/komari:latest
 #prom/prometheus:latest
 #grafana/grafana:latest
-#nacos/nacos-server:v3.1.0
 #rustscan/rustscan:latest
 #qdnas/flatnas:latest
 #zookeeper:latest
