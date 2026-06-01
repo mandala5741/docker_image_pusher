@@ -96,7 +96,7 @@ postgres:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
-#--platform=linux/arm64 nacos/nacos-server:latest
+--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform linux/arm64 ubuntu:22.04
