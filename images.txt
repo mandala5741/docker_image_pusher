@@ -1,6 +1,6 @@
 #指定AMD架构镜像区域
 #justsong/one-api
-nacos/nacos-server:latest
+#nacos/nacos-server:latest
 #lbjlaq/antigravity-manager:latest
 #quenary/tugtainer:latest
 #apachewebdav/apachewebdav
@@ -12,13 +12,13 @@ nacos/nacos-server:latest
 #redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
-mysql:8.4.9
+#mysql:8.4.9
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
-redis:latest
-nginx:latest
-postgres:latest
-openresty/openresty
+#redis:latest
+#nginx:latest
+#postgres:latest
+#openresty/openresty
 #rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
@@ -96,7 +96,8 @@ openresty/openresty
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 nacos/nacos-server:latest
+--platform=linux/arm64 nacos/nacos-server:1.4.1
+#nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
 #--platform linux/arm64 ubuntu:22.04
