@@ -96,7 +96,7 @@
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 nacos/nacos-server:1.4.1
+--platform=linux/arm64 nacos/nacos-server:1.4.2
 #nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
@@ -120,10 +120,10 @@
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
---platform=linux/arm64 redis:latest
---platform=linux/arm64 nginx:latest
---platform=linux/arm64 postgres:latest
---platform=linux/arm64 openresty/openresty
+#--platform=linux/arm64 redis:latest
+#--platform=linux/arm64 nginx:latest
+#--platform=linux/arm64 postgres:latest
+#--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 zookeeper:latest
