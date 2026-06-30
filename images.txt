@@ -13,13 +13,13 @@
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
 #mysql:8.4.9
-t8y2/dbx
+#t8y2/dbx
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
-#redis:latest
-#nginx:latest
+redis:latest
+nginx:latest
 #postgres:latest
-#openresty/openresty
+openresty/openresty
 #rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
@@ -97,7 +97,7 @@ t8y2/dbx
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 t8y2/dbx
+#--platform=linux/arm64 t8y2/dbx
 #--platform=linux/arm64  lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:latest
@@ -123,8 +123,8 @@ t8y2/dbx
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
-#--platform=linux/arm64 redis:latest
-#--platform=linux/arm64 nginx:latest
+--platform=linux/arm64 redis:latest
+--platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 postgres:latest
 #--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
