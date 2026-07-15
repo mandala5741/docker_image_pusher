@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-ghcr.io/zaproxy/zaproxy:stable
+#ghcr.io/zaproxy/zaproxy:stable
 #justsong/one-api
 #nacos/nacos-server:latest
 #lbjlaq/antigravity-manager:latest
@@ -124,7 +124,7 @@ openresty/openresty
 #--platform linux/arm64 flowable/flowable-ui:6.8.0
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
---platform=linux/arm64 ghcr.io/zaproxy/zaproxy:stable
+#--platform=linux/arm64 ghcr.io/zaproxy/zaproxy:stable
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 postgres:latest
