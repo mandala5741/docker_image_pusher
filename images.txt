@@ -69,14 +69,14 @@ openresty/openresty
 #docker.dragonflydb.io/dragonflydb/dragonfly
 #skytable/skytable:latest
 #bitnami/memcached:latest
-#valkey/valkey
+valkey/valkey
 #copyparty/ac:latest
 #pubuzhixing/drawnix:latest
 #searxng/searxng:2025.7.22-5cbf422
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
-#openjdk:17
+openjdk:17
 #openjdk:21
 #ringcentral/jdk:25.0.1
 #ghcr.io/graalvm/jdk-community:25.0.1
@@ -99,7 +99,7 @@ openresty/openresty
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
 #--platform=linux/arm64 t8y2/dbx
-#--platform=linux/arm64  lzj960515/nacos:1.4.2
+#--platform=linux/arm64 lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
