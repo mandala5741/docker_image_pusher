@@ -99,7 +99,7 @@ valkey/valkey
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
-#--platform=linux/arm64 databasus/databasus:latest
+--platform=linux/arm64 databasus/databasus:latest
 #--platform=linux/arm64 lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:latest
@@ -136,11 +136,11 @@ valkey/valkey
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
---platform=linux/arm64 mysql:8.4.9
+#--platform=linux/arm64 mysql:8.4.9
 #--platform=linux/arm64 lampon/omnibox:v1.4.4
 #--platform=linux/arm64 mostafawahied/portracker:latest
-#--platform=linux/arm64  plexinc/pms-docker:latest
-#--platform=linux/arm64  anoniemerd/prunemate:latest
+#--platform=linux/arm64 plexinc/pms-docker:latest
+#--platform=linux/arm64 anoniemerd/prunemate:latest
 #--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
