@@ -17,6 +17,7 @@
 #t8y2/dbx
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
+databasus/databasus:latest
 redis:latest
 nginx:latest
 #postgres:latest
@@ -98,7 +99,7 @@ valkey/valkey
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
-#--platform=linux/arm64 t8y2/dbx
+#--platform=linux/arm64 databasus/databasus:latest
 #--platform=linux/arm64 lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:latest
