@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+docker.io/library/python:3.9-slim
 #ghcr.io/zaproxy/zaproxy:stable
 #justsong/one-api
 #nacos/nacos-server:latest
