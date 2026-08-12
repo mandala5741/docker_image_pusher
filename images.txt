@@ -1,5 +1,5 @@
 #指定AMD架构镜像区域
-docker.io/library/python:3.9-slim
+#docker.io/library/python:3.9-slim
 #ghcr.io/zaproxy/zaproxy:stable
 #justsong/one-api
 #nacos/nacos-server:latest
@@ -18,12 +18,12 @@ docker.io/library/python:3.9-slim
 #t8y2/dbx
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
-databasus/databasus:latest
+#databasus/databasus:latest
 redis:latest
 nginx:latest
-#postgres:latest
+postgres:latest
 openresty/openresty
-#rustfs/rustfs:latest
+rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
@@ -100,7 +100,7 @@ valkey/valkey
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
---platform=linux/arm64 databasus/databasus:latest
+#--platform=linux/arm64 databasus/databasus:latest
 #--platform=linux/arm64 lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:latest
@@ -129,8 +129,8 @@ valkey/valkey
 #--platform=linux/arm64 ghcr.io/zaproxy/zaproxy:stable
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
-#--platform=linux/arm64 postgres:latest
-#--platform=linux/arm64 openresty/openresty
+--platform=linux/arm64 postgres:latest
+--platform=linux/arm64 openresty/openresty
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 zookeeper:latest
