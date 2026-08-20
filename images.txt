@@ -127,7 +127,7 @@ valkey/valkey
 #--platform=linux/arm64 drakkan/sftpgo:latest
 #--platform=linux/arm64 mongo-express:latest
 #--platform=linux/arm64 ghcr.io/zaproxy/zaproxy:stable
- --platform=linux/arm64 zlmediakit/zlmediakit:master
+# --platform=linux/arm64 zlmediakit/zlmediakit:master
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
 --platform=linux/arm64 postgres:latest
