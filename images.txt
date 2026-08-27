@@ -96,7 +96,7 @@ valkey/valkey
 #grafana/grafana:latest
 #rustscan/rustscan:latest
 #qdnas/flatnas:latest
-#zookeeper:latest
+zookeeper:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
