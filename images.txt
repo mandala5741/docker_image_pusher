@@ -32,7 +32,7 @@ rustfs/rustfs:latest
 #marcobaobao/yt-dlp-webui
 #provectuslabs/kafka-ui:latest
 #dockurr/windows
-#mariadb
+mariadb
 #onlyoffice/documentserver:latest
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
@@ -170,7 +170,7 @@ zookeeper:latest
 #--platform=linux/arm64 openjdk:17
 #--platform=linux/arm64 openjdk:21
 #--platform=linux/arm64 ringcentral/jdk:25.0.1
-#--platform=linux/arm64 nacos/nacos-server:v3.1.0
+--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
 #--platform=linux/arm64 node:18-alpine3.18
