@@ -32,7 +32,7 @@ rustfs/rustfs:latest
 #marcobaobao/yt-dlp-webui
 #provectuslabs/kafka-ui:latest
 #dockurr/windows
-mariadb
+#mariadb
 #onlyoffice/documentserver:latest
 #fauria/vsftpd
 #linuxserver/wps-office:chinese
