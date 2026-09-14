@@ -1,4 +1,5 @@
 #指定AMD架构镜像区域
+apache/hive:4.0.0
 #docker.io/library/python:3.9-slim
 #ghcr.io/zaproxy/zaproxy:stable
 #justsong/one-api
@@ -128,6 +129,7 @@ zookeeper:latest
 #--platform=linux/arm64 mongo-express:latest
 #--platform=linux/arm64 ghcr.io/zaproxy/zaproxy:stable
 # --platform=linux/arm64 zlmediakit/zlmediakit:master
+--platform=linux/arm64 apache/hive:4.0.0
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
 --platform=linux/arm64 postgres:latest
