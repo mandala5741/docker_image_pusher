@@ -1,6 +1,7 @@
 #指定AMD架构镜像区域
-eclipse-temurin:17-jdk
-eclipse-temurin:21-jdk
+localai/localai:latest-cpu
+#eclipse-temurin:17-jdk
+#eclipse-temurin:21-jdk
 #apache/hive:4.2.1
 #docker.io/library/python:3.9-slim
 #ghcr.io/zaproxy/zaproxy:stable
@@ -26,7 +27,7 @@ redis:latest
 nginx:latest
 postgres:latest
 openresty/openresty
-rustfs/rustfs:latest
+#rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
@@ -103,11 +104,12 @@ zookeeper:latest
 #wurstmeister/kafka:latest
 #uusec/openresty-manager:latest
 #指定ARM架构镜像区域
+--platform=linux/arm64 localai/localai:latest-cpu
 #--platform=linux/arm64 databasus/databasus:latest
 #--platform=linux/arm64 lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
---platform=linux/arm64 eclipse-temurin:17-jdk
---platform=linux/arm64 eclipse-temurin:21-jdk
+#--platform=linux/arm64 eclipse-temurin:17-jdk
+#--platform=linux/arm64 eclipse-temurin:21-jdk
 #--platform=linux/arm64 apache/hive:4.2.1
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
