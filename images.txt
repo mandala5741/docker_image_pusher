@@ -1,4 +1,6 @@
 #指定AMD架构镜像区域
+apache/doris:be-latest
+apache/doris:fe-latest
 #ghcr.io/ggml-org/llama.cpp:server
 #localai/localai:latest-cpu
 #eclipse-temurin:17-jdk
