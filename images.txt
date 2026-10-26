@@ -1,6 +1,6 @@
 #指定AMD架构镜像区域
-apache/doris:be-latest
-apache/doris:fe-latest
+#apache/doris:be-latest
+#apache/doris:fe-latest
 #ghcr.io/ggml-org/llama.cpp:server
 #localai/localai:latest-cpu
 #eclipse-temurin:17-jdk
@@ -21,7 +21,7 @@ nacos/nacos-server:latest
 #redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
-#mysql:8.4.9
+mysql:26.10.0
 t8y2/dbx
 #mostafawahied/portracker:latest
 gogs/gogs:latest
@@ -149,7 +149,7 @@ openresty/openresty
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
-#--platform=linux/arm64 mysql:8.4.9
+--platform=linux/arm64 mysql:26.10.0
 #--platform=linux/arm64 lampon/omnibox:v1.4.4
 #--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64 plexinc/pms-docker:latest
