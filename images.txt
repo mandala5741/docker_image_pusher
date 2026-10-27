@@ -21,7 +21,7 @@ nacos/nacos-server:latest
 #redislabs/redisinsight:latest 
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
-mysql:26.10.0
+#mysql:latest
 t8y2/dbx
 #mostafawahied/portracker:latest
 gogs/gogs:latest
@@ -30,7 +30,7 @@ redis:latest
 nginx:latest
 postgres:latest
 openresty/openresty
-#rustfs/rustfs:latest
+rustfs/rustfs:latest
 #plexinc/pms-docker:latest
 #mongo:latest
 #godoos/godoos:latest
@@ -149,12 +149,12 @@ openresty/openresty
 #--platform=linux/arm64 wurstmeister/kafka:latest
 #--platform=linux/arm64 rustscan/rustscan:latest
 #--platform=linux/arm64 qdnas/flatnas:latest
---platform=linux/arm64 mysql:26.10.0
+#--platform=linux/arm64 mysql:26.10.0
 #--platform=linux/arm64 lampon/omnibox:v1.4.4
 #--platform=linux/arm64 mostafawahied/portracker:latest
 #--platform=linux/arm64 plexinc/pms-docker:latest
 #--platform=linux/arm64 anoniemerd/prunemate:latest
-#--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 jrottenberg/ffmpeg
 #--platform=linux/arm64 apache/rocketmq:5.3.3
 #--platform=linux/arm64 postgres:16.4
