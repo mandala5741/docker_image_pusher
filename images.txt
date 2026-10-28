@@ -3,8 +3,8 @@
 #apache/doris:fe-latest
 #ghcr.io/ggml-org/llama.cpp:server
 #localai/localai:latest-cpu
-#eclipse-temurin:17-jdk
-#eclipse-temurin:21-jdk
+eclipse-temurin:17-jdk
+eclipse-temurin:21-jdk
 #apache/hive:4.2.1
 #docker.io/library/python:3.9-slim
 #ghcr.io/zaproxy/zaproxy:stable
@@ -85,8 +85,8 @@ rustfs/rustfs:latest
 #eqalpha/keydb:latest
 #tdengine/tdengine:latest
 #minio/minio:latest
-#openjdk:17
-#openjdk:21
+openjdk:17
+openjdk:21
 #ringcentral/jdk:25.0.1
 #ghcr.io/graalvm/jdk-community:25.0.1
 #apache/kafka-native:latest
@@ -111,8 +111,8 @@ rustfs/rustfs:latest
 #--platform=linux/arm64 databasus/databasus:latest
 #--platform=linux/arm64 lzj960515/nacos:1.4.2
 #--platform=linux/arm64 nacos/nacos-server:1.4.2
-#--platform=linux/arm64 eclipse-temurin:17-jdk
-#--platform=linux/arm64 eclipse-temurin:21-jdk
+--platform=linux/arm64 eclipse-temurin:17-jdk
+--platform=linux/arm64 eclipse-temurin:21-jdk
 #--platform=linux/arm64 apache/hive:4.2.1
 #--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
 #--platform=linux/arm64 n8nio/n8n:latest
@@ -178,8 +178,8 @@ rustfs/rustfs:latest
 #--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
 #--platform=linux/arm64 copyparty/ac:latest
 #--platform=linux/arm64 apache/kafka-native:latest
-#--platform=linux/arm64 openjdk:17
-#--platform=linux/arm64 openjdk:21
+--platform=linux/arm64 openjdk:17
+--platform=linux/arm64 openjdk:21
 #--platform=linux/arm64 ringcentral/jdk:25.0.1
 #--platform=linux/arm64 jenkins/jenkins
 #--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
