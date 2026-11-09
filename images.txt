@@ -22,7 +22,7 @@ nacos/nacos-server:latest
 #anoniemerd/prunemate:latest
 #n8nio/n8n:latest
 #mysql:latest
-t8y2/dbx
+#t8y2/dbx
 #mostafawahied/portracker:latest
 gogs/gogs:latest
 #databasus/databasus:latest
