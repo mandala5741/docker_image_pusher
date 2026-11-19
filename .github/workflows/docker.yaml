@@ -5,7 +5,6 @@ on:
   push:
     branches: [ main ]
 
-
 env:
   ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
   ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
@@ -17,6 +16,7 @@ jobs:
   build:
     name: Pull
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
     - name: Before freeing up disk space
       run: |
@@ -29,14 +29,10 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-
         root-reserve-mb: 2048
         swap-size-mb: 128
         remove-dotnet: 'true'
         remove-haskell: 'true'
-        # 如果空间还是不够用，可以把以下开启，清理出更多空间
-        # remove-android: 'true'
-        # remove-codeql: 'true'
         build-mount-path: '/var/lib/docker/'
 
     - name: Restart docker
@@ -50,108 +46,135 @@ jobs:
         echo "=============================================================================="
 
     - name: Checkout Code
-      uses: actions/checkout@v4
-
-    - name: Docker Setup Buildx
-      uses: docker/setup-buildx-action@v3
+      uses: actions/checkout@v5
 
     - name: Build and push image Aliyun
       run: |
-        docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
-        # 数据预处理,判断镜像是否重名
+        set -euo pipefail
+
+        # 校验必要变量，避免拼出非法镜像名
+        if [[ -z "${ALIYUN_REGISTRY}" || -z "${ALIYUN_NAME_SPACE}" ]]; then
+          echo "ERROR: ALIYUN_REGISTRY or ALIYUN_NAME_SPACE is empty"
+          exit 1
+        fi
+
+        docker login -u "$ALIYUN_REGISTRY_USER" -p "$ALIYUN_REGISTRY_PASSWORD" "$ALIYUN_REGISTRY"
+
+        # 数据预处理，判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
         while IFS= read -r line || [ -n "$line" ]; do
-            # 忽略空行与注释
             [[ -z "$line" ]] && continue
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
-            
-            # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
+
             image=$(echo "$line" | awk '{print $NF}')
-            # 将@sha256:等字符删除
             image="${image%%@*}"
-            echo "image $image"
-            # 获取镜像名:版本号  例如nginx:1.25.3
             image_name_tag=$(echo "$image" | awk -F'/' '{print $NF}')
-            echo "image_name_tag $image_name_tag"
-            # 获取命名空间 例如kasmweb,  这里有种特殊情况 docker.io/nginx，把docker.io当成命名空间，也OK
             name_space=$(echo "$image" | awk -F'/' '{if (NF==3) print $2; else if (NF==2) print $1; else print ""}')
-            echo "name_space: $name_space"
-            # 这里不要是空值影响判断
             name_space="${name_space}_"
-            # 获取镜像名例如nginx
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
-            echo "image_name: $image_name"
-            
-            # 如果镜像存在于数组中，则添加temp_map
-            if [[ -n "${temp_map[$image_name]}" ]]; then
-                 # 如果temp_map已经存在镜像名，判断是不是同一命名空间
-                 if [[ "${temp_map[$image_name]}" != $name_space  ]]; then
+
+            if [[ -n "${temp_map[$image_name]:-}" ]]; then
+                 if [[ "${temp_map[$image_name]}" != "$name_space" ]]; then
                     echo "duplicate image name: $image_name"
                     duplicate_images[$image_name]="true"
                  fi
             else
-                # 存镜像的命名空间
                 temp_map[$image_name]=$name_space
-            fi       
+            fi
         done < images.txt
-        
-        
+
         while IFS= read -r line || [ -n "$line" ]; do
-            # 忽略空行与注释
             [[ -z "$line" ]] && continue
             if echo "$line" | grep -q '^\s*#'; then
                 continue
             fi
-        
-            echo "docker pull $line"
-            docker pull $line
+
+            echo "----------------------------------------------------------------"
+            echo "raw line: [$line]"
+
+            # 解析 platform（支持 --platform linux/amd64 或 --platform=linux/amd64）
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
-            echo "platform is $platform"
-            # 如果存在架构信息 将架构信息拼到镜像名称前面
             if [ -z "$platform" ]; then
                 platform_prefix=""
             else
                 platform_prefix="${platform//\//_}_"
             fi
-            echo "platform_prefix is $platform_prefix"
-            # 获取镜像的完整名称，例如kasmweb/nginx:1.25.3（命名空间/镜像名:版本号）
-            image=$(echo "$line" | awk '{print $NF}')
 
-            # 获取 镜像名:版本号  例如nginx:1.25.3
+            # 从行中剥离 --platform 及其值，得到纯镜像引用，避免 docker pull 参数顺序问题
+            pull_ref=$(echo "$line" | sed -E 's/--platform[ =][^ ]+[ ]*//g' | xargs)
+            echo "pull_ref: [$pull_ref]"
+            echo "platform: [$platform]"
+            echo "platform_prefix: [$platform_prefix]"
+
+            if [[ -z "$pull_ref" ]]; then
+                echo "ERROR: empty image reference after parsing"
+                exit 1
+            fi
+
+            echo "docker pull $pull_ref"
+            if ! docker pull $pull_ref; then
+                echo "ERROR: docker pull failed: $pull_ref"
+                exit 1
+            fi
+
+            image="$pull_ref"
             image_name_tag=$(echo "$image" | awk -F'/' '{print $NF}')
-            # 获取命名空间 例如kasmweb  这里有种特殊情况 docker.io/nginx，把docker.io当成命名空间，也OK
             name_space=$(echo "$image" | awk -F'/' '{if (NF==3) print $2; else if (NF==2) print $1; else print ""}')
-            # 获取镜像名例  例如nginx
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
-        
+
             name_space_prefix=""
-            # 如果镜像名重名
-            if [[ -n "${duplicate_images[$image_name]}" ]]; then
-               #如果命名空间非空，将命名空间加到前缀
+            if [[ -n "${duplicate_images[$image_name]:-}" ]]; then
                if [[ -n "${name_space}" ]]; then
                   name_space_prefix="${name_space}_"
                fi
             fi
-            
-            # 将@sha256:等字符删除
+
             image_name_tag="${image_name_tag%%@*}"
             new_image="$ALIYUN_REGISTRY/$ALIYUN_NAME_SPACE/$platform_prefix$name_space_prefix$image_name_tag"
+            echo "new_image: [$new_image]"
+
             echo "docker tag $image $new_image"
-            docker tag $image $new_image
+            if ! docker tag "$image" "$new_image"; then
+                echo "ERROR: docker tag failed: $image -> $new_image"
+                exit 1
+            fi
+
             echo "docker push $new_image"
-            docker push $new_image
+            if ! docker push "$new_image"; then
+                echo "ERROR: docker push failed: $new_image"
+                exit 1
+            fi
+
+            # 验证远程仓库确实有该镜像
+            echo "verify remote manifest: $new_image"
+            if ! docker manifest inspect "$new_image" > /dev/null; then
+                echo "ERROR: push verification failed, remote manifest not found: $new_image"
+                exit 1
+            fi
+            echo "push verified: $new_image"
+
             echo "开始清理磁盘空间"
             echo "=============================================================================="
             df -hT
             echo "=============================================================================="
-            docker rmi $image
-            docker rmi $new_image
+            docker rmi "$new_image" || true
+            docker rmi "$image" || true
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
             df -hT
-            echo "=============================================================================="     
-            
+            echo "=============================================================================="
+
         done < images.txt
+
+    - name: Cleanup Docker and background processes
+      if: always()
+      run: |
+        docker buildx rm --all-inactive --force 2>/dev/null || true
+        docker system prune -af 2>/dev/null || true
+        pkill -f containerd-shim 2>/dev/null || true
+        pkill -f buildkitd 2>/dev/null || true
+        jobs -p | xargs -r kill 2>/dev/null || true
+        wait 2>/dev/null || true
