@@ -1,10 +1,191 @@
 #指定AMD架构镜像区域
+#apache/doris:be-latest
+#apache/doris:fe-latest
+#ghcr.io/ggml-org/llama.cpp:server
+#localai/localai:latest-cpu
+#eclipse-temurin:17-jdk
+#eclipse-temurin:21-jdk
+#apache/hive:4.2.1
+#docker.io/library/python:3.9-slim
+#ghcr.io/zaproxy/zaproxy:stable
+#justsong/one-api
+#nacos/nacos-server:latest
+#lbjlaq/antigravity-manager:latest
+#quenary/tugtainer:latest
+#apachewebdav/apachewebdav
+#datart/datart
+#nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+#deepanalyze:latest
+#calciumion/new-api:latest
+#redislabs/redisinsight:latest 
+#anoniemerd/prunemate:latest
+#n8nio/n8n:latest
+#mysql:latest
+#t8y2/dbx
+#mostafawahied/portracker:latest
+#gogs/gogs:latest
+#databasus/databasus:latest
 redis:latest
 nginx:latest
 postgres:latest
 openresty/openresty
+#rustfs/rustfs:latest
+#plexinc/pms-docker:latest
+#mongo:latest
+#godoos/godoos:latest
+#wurstmeister/kafka
+#flink
+#marcobaobao/yt-dlp-webui
+#provectuslabs/kafka-ui:latest
+#dockurr/windows
+#mariadb
+#onlyoffice/documentserver:latest
+#fauria/vsftpd
+#linuxserver/wps-office:chinese
+#mrvautin/adminmongo
+#flowable/flowable-ui:latest
+#drakkan/sftpgo:latest
+#mongo-express:latest
+#camunda/camunda-bpm-platform:latest
+#flowable/flowable-rest:latest
+#eipwork/kuboard:v3.5.2.9
+#calico/node:v3.27.3
+#calico/kube-controllers:v3.27.3
+#calico/cni:v3.27.3
+#elasticsearch:7.17.28
+#o2oa/baseo2server
+#jrottenberg/ffmpeg
+#zabbix/zabbix-java-gateway
+#zabbix/zabbix-server-mysql
+#zabbix/zabbix-web-nginx-mysql
+#zabbix/zabbix-agent
+oceanbase/oceanbase-ce:latest
+gitea/gitea:latest
+#kestra/kestra:latest
+#emqx/emqx:latest
+#mcr.microsoft.com/mssql/server:2022-latest
+#emqx/mqttx-web
+#emqx/mqttx-cli
+#ghcr.io/ofkm/arcane:latest
+#rabbitmq:3.8.9
+#webdb/app:2025.06.10 
+#opengauss/opengauss:latest
+#tosone/sigma:nightly-alpine
+#frangoteam/fuxa:latest
+#ghcr.io/sky22333/acg-faka:latest
+#apache/rocketmq:5.2.0
+#docker.dragonflydb.io/dragonflydb/dragonfly
+#skytable/skytable:latest
+#bitnami/memcached:latest
+#valkey/valkey
+#copyparty/ac:latest
+#pubuzhixing/drawnix:latest
+#searxng/searxng:2025.7.22-5cbf422
+#eqalpha/keydb:latest
+#tdengine/tdengine:latest
+#minio/minio:latest
+#openjdk:17
+#openjdk:21
+#ringcentral/jdk:25.0.1
+#ghcr.io/graalvm/jdk-community:25.0.1
+#apache/kafka-native:latest
+#ksjaay/lunalytics:latest
+#polardb/polardb_pg_local_instance
+#lampon/omnibox:v1.4.4
+#ghcr.io/katelya77/katelyatv:latest
+#clickhouse/clickhouse-server
+#apache/rocketmq:5.3.3
+#delron/fastdfs:latest
+#eqalpha/keydb:latest
+#ghcr.io/komari-monitor/komari:latest
+#prom/prometheus:latest
+#grafana/grafana:latest
+#rustscan/rustscan:latest
+#qdnas/flatnas:latest
+#zookeeper:latest
+#wurstmeister/kafka:latest
+#uusec/openresty-manager:latest
 #指定ARM架构镜像区域
+#--platform=linux/arm64 ghcr.io/ggml-org/llama.cpp:server
+#--platform=linux/arm64 databasus/databasus:latest
+#--platform=linux/arm64 lzj960515/nacos:1.4.2
+#--platform=linux/arm64 nacos/nacos-server:1.4.2
+#--platform=linux/arm64 eclipse-temurin:17-jdk
+#--platform=linux/arm64 eclipse-temurin:21-jdk
+#--platform=linux/arm64 apache/hive:4.2.1
+#--platform=linux/arm64 ghcr.io/graalvm/jdk-community:25.0.1
+#--platform=linux/arm64 n8nio/n8n:latest
+#--platform linux/arm64 ubuntu:22.04
+#--platform linux/arm64 justsong/one-api
+#--platform linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
+#--platform=linux/arm64 emqx/emqx:latest
+#--platform=linux/arm64 webdb/app:2025.06.10
+#--platform=linux/arm64 opengauss/opengauss:latest
+#--platform=linux/arm64 mongo:latest
+#--platform=linux/arm64 flowable/flowable-ui:latest
+#--platform linux/arm64 mrvautin/adminmongo
+#--platform linux/arm64 fauria/vsftpd
+#--platform linux/arm64 flink
+#--platform linux/arm64 deepanalyze:latest
+#--platform linux/arm64 calciumion/new-api:latest
+#--platform linux/arm64 ghcr.io/openclaw/openclaw:latest
+#--platform linux/arm64 gogs/gogs:latest
+#--platform linux/arm64 wurstmeister/kafka
+#--platform linux/arm64 provectuslabs/kafka-ui:latest
+#--platform linux/arm64 flowable/flowable-ui:6.8.0
+#--platform=linux/arm64 drakkan/sftpgo:latest
+#--platform=linux/arm64 mongo-express:latest
+#--platform=linux/arm64 ghcr.io/zaproxy/zaproxy:stable
+# --platform=linux/arm64 zlmediakit/zlmediakit:master
+#--platform=linux/arm64 nacos/nacos-server:latest
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
 --platform=linux/arm64 postgres:latest
 --platform=linux/arm64 openresty/openresty
+#--platform=linux/arm64 rustfs/rustfs:latest
+#--platform=linux/arm64 camunda/camunda-bpm-platform:latest
+#--platform=linux/arm64 flowable/flowable-rest:latest
+#--platform=linux/arm64 zookeeper:latest
+#--platform=linux/arm64 wurstmeister/kafka:latest
+#--platform=linux/arm64 rustscan/rustscan:latest
+#--platform=linux/arm64 qdnas/flatnas:latest
+#--platform=linux/arm64 mysql:26.10.0
+#--platform=linux/arm64 lampon/omnibox:v1.4.4
+#--platform=linux/arm64 mostafawahied/portracker:latest
+#--platform=linux/arm64 plexinc/pms-docker:latest
+#--platform=linux/arm64 anoniemerd/prunemate:latest
+#--platform=linux/arm64 jrottenberg/ffmpeg
+#--platform=linux/arm64 apache/rocketmq:5.3.3
+#--platform=linux/arm64 postgres:16.4
+#--platform=linux/arm64 frangoteam/fuxa:latest
+#--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
+#--platform=linux/arm64 ghcr.io/katelya77/katelyatv:latest
+#--platform=linux/arm64 gitea/gitea:latest
+#--platform=linux/arm64 oceanbase/oceanbase-ce:latest
+#--platform=linux/arm64 elasticsearch:8.17.4
+#--platform=linux/arm64 mariadb
+#--platform=linux/arm64 onlyoffice/documentserver:latest
+#--platform=linux/arm64 ksjaay/lunalytics:latest
+#--platform=linux/arm64 polardb/polardb_pg_local_instance
+#--platform=linux/arm64 prom/prometheus:latest
+#--platform=linux/arm64 grafana/grafana:latest
+#--platform=linux/arm64 searxng/searxng:2025.7.22-5cbf422
+#--platform=linux/arm64 gvenzl/oracle-xe:11
+#--platform=linux/arm64 dm8:dm8_20241230_rev255012_HWarm_kylin10_64
+#--platform=linux/arm64 clickhouse/clickhouse-server
+#--platform=linux/arm64 uusec/openresty-manager:latest
+#--platform=linux/arm64 ghcr.io/komari-monitor/komari:latest
+#--platform=linux/arm64 copyparty/ac:latest
+#--platform=linux/arm64 apache/kafka-native:latest
+#--platform=linux/arm64 openjdk:17
+#--platform=linux/arm64 openjdk:21
+#--platform=linux/arm64 ringcentral/jdk:25.0.1
+#--platform=linux/arm64 jenkins/jenkins
+#--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-vector-model:v1.0.1
+#--platform=linux/arm64 node:18-alpine3.18
+#--platform=linux/arm64 ghcr.io/1panel-dev/maxkb-python-pg:python3.11-pg15.8
+#--platform=linux/arm64 docker.dragonflydb.io/dragonflydb/dragonfly
+#--platform=linux/arm64 skytable/skytable:latest
+#--platform=linux/arm64 bitnami/memcached:latest
+#--platform=linux/arm64 valkey/valkey
+#--platform=linux/arm64 tdengine/tdengine:latest
