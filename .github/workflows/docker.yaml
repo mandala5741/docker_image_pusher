@@ -83,8 +83,9 @@ jobs:
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
             echo "image_name: $image_name"
 
-            if [[ -n "${temp_map[$image_name]}" ]]; then
-                if [[ "${temp_map[$image_name]}" != "$name_space" ]]; then
+            # 关键修复：使用 :- 提供默认值，避免 set -u 报 unbound variable
+            if [[ -n "${temp_map[$image_name]:-}" ]]; then
+                if [[ "${temp_map[$image_name]:-}" != "$name_space" ]]; then
                     echo "duplicate image name: $image_name"
                     duplicate_images[$image_name]="true"
                 fi
@@ -132,7 +133,8 @@ jobs:
 
             name_space_prefix=""
 
-            if [[ -n "${duplicate_images[$image_name]}" ]]; then
+            # 关键修复：同样使用 :- 兜底
+            if [[ -n "${duplicate_images[$image_name]:-}" ]]; then
                 if [[ -n "$name_space" ]]; then
                     name_space_prefix="${name_space}_"
                 fi
@@ -154,7 +156,7 @@ jobs:
             echo "docker push $new_image"
             if ! docker push "$new_image"; then
                 echo "ERROR: 推送失败: $new_image"
-                # 推送失败也清理本地，避免占盘；源镜像保留便于排查
+                # 推送失败也清理本地目标 tag，避免占盘；源镜像保留便于排查
                 docker rmi "$new_image" || true
                 continue
             fi
