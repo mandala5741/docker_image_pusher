@@ -1,4 +1,3 @@
-
 name: Docker
 
 on:
@@ -55,7 +54,7 @@ jobs:
     - name: Build and push image Aliyun
       shell: bash
       run: |
-        set -e
+        set -euo pipefail
 
         # 登录阿里云 ACR
         echo "$ALIYUN_REGISTRY_PASSWORD" | docker login \
@@ -79,7 +78,6 @@ jobs:
             echo "image_name_tag $image_name_tag"
 
             name_space=$(echo "$image" | awk -F'/' '{if (NF==3) print $2; else if (NF==2) print $1; else print ""}')
-
             name_space="${name_space}_"
 
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
@@ -101,8 +99,17 @@ jobs:
             [[ -z "$line" ]] && continue
             [[ "$line" =~ ^[[:space:]]*# ]] && continue
 
+            echo "=========================================="
+            echo "处理镜像: $line"
+            echo "当前磁盘使用:"
+            df -hT /var/lib/docker || df -hT
+            echo "=========================================="
+
             echo "docker pull $line"
-            docker pull $line
+            if ! docker pull $line; then
+                echo "ERROR: 拉取失败，跳过: $line"
+                continue
+            fi
 
             platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
             echo "platform is $platform"
@@ -145,20 +152,29 @@ jobs:
 
             # 推送阿里云 ACR
             echo "docker push $new_image"
-            docker push "$new_image"
+            if ! docker push "$new_image"; then
+                echo "ERROR: 推送失败: $new_image"
+                # 推送失败也清理本地，避免占盘；源镜像保留便于排查
+                docker rmi "$new_image" || true
+                continue
+            fi
 
             # 检查推送结果
             docker image inspect "$new_image" \
               --format='Image ID: {{.Id}}, Size: {{.Size}}'
 
             echo "开始清理磁盘空间"
-            df -hT
+            df -hT /var/lib/docker || df -hT
 
-            docker rmi "$image"
-            docker rmi "$new_image"
+            # 先删目标 tag，再删源镜像；加 || true 避免中断
+            docker rmi "$new_image" || true
+            docker rmi "$image" || true
+
+            # 清理构建缓存，防止缓存累积撑爆磁盘
+            docker builder prune -f || true
 
             echo "磁盘空间清理完毕"
-            df -hT
+            df -hT /var/lib/docker || df -hT
 
         done < images.txt
 
