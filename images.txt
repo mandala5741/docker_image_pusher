@@ -25,7 +25,7 @@ eclipse-temurin:21-jdk
 #mostafawahied/portracker:latest
 #gogs/gogs:latest
 #databasus/databasus:latest
-postgres:16.4
+postgres:16.16
 redis:latest
 nginx:latest
 #postgres:latest
@@ -138,6 +138,7 @@ gitea/gitea:latest
 # --platform=linux/arm64 zlmediakit/zlmediakit:master
 #--platform=linux/arm64 nacos/nacos-server:latest
 #--platform=linux/arm64 postgres:18.7
+--platform=linux/arm64 postgres:16.16
 --platform=linux/arm64 redis:latest
 --platform=linux/arm64 nginx:latest
 #--platform=linux/arm64 postgres:latest
