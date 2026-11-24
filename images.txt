@@ -142,7 +142,7 @@ gitea/gitea:latest
 --platform=linux/arm64 nginx:latest
 --platform=linux/arm64 postgres:latest
 --platform=linux/arm64 openresty/openresty
-#--platform=linux/arm64 rustfs/rustfs:latest
+--platform=linux/arm64 rustfs/rustfs:latest
 #--platform=linux/arm64 camunda/camunda-bpm-platform:latest
 #--platform=linux/arm64 flowable/flowable-rest:latest
 #--platform=linux/arm64 zookeeper:latest
