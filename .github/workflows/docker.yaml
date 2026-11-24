@@ -18,35 +18,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Before freeing up disk space
-      run: |
-        echo "Before freeing up disk space"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
-
-    # 增加可用磁盘空间
-    - name: Maximize build space
-      uses: easimon/maximize-build-space@master
-      with:
-        root-reserve-mb: 2048
-        swap-size-mb: 128
-        remove-dotnet: 'true'
-        remove-haskell: 'true'
-        build-mount-path: '/var/lib/docker/'
-
-    - name: Restart docker
-      run: sudo service docker restart
-
-    - name: Free up disk space complete
-      run: |
-        echo "Free up disk space complete"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
-
     - name: Checkout Code
       uses: actions/checkout@v6
+
+    # 关键改动：不再用 maximize-build-space，直接手动清理预装工具
+    - name: Free Disk Space (Manual)
+      run: |
+        echo "Before cleanup:"
+        df -hT /
+        # 删除 GitHub Runner 预装的大型工具链，通常可释放 20-30GB
+        sudo rm -rf /usr/local/lib/android
+        sudo rm -rf /usr/share/dotnet
+        sudo rm -rf /opt/hostedtoolcache/CodeQL
+        sudo rm -rf /usr/local/share/powershell
+        sudo rm -rf /usr/local/lib/node_modules
+        # 清理 Docker 缓存
+        docker system prune -af || true
+        echo "After cleanup:"
+        df -hT /
 
     - name: Docker Setup Buildx
       uses: docker/setup-buildx-action@v4
@@ -83,7 +72,7 @@ jobs:
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
             echo "image_name: $image_name"
 
-            # 关键修复：使用 :- 提供默认值，避免 set -u 报 unbound variable
+            # 使用 :- 提供默认值，避免 set -u 报 unbound variable
             if [[ -n "${temp_map[$image_name]:-}" ]]; then
                 if [[ "${temp_map[$image_name]:-}" != "$name_space" ]]; then
                     echo "duplicate image name: $image_name"
@@ -103,7 +92,7 @@ jobs:
             echo "=========================================="
             echo "处理镜像: $line"
             echo "当前磁盘使用:"
-            df -hT /var/lib/docker || df -hT
+            df -hT /
             echo "=========================================="
 
             echo "docker pull $line"
@@ -133,7 +122,6 @@ jobs:
 
             name_space_prefix=""
 
-            # 关键修复：同样使用 :- 兜底
             if [[ -n "${duplicate_images[$image_name]:-}" ]]; then
                 if [[ -n "$name_space" ]]; then
                     name_space_prefix="${name_space}_"
@@ -149,34 +137,27 @@ jobs:
             echo "Target image: $new_image"
             echo "=========================================="
 
-            # 镜像重命名
             docker tag "$image" "$new_image"
 
-            # 推送阿里云 ACR
             echo "docker push $new_image"
             if ! docker push "$new_image"; then
                 echo "ERROR: 推送失败: $new_image"
-                # 推送失败也清理本地目标 tag，避免占盘；源镜像保留便于排查
                 docker rmi "$new_image" || true
                 continue
             fi
 
-            # 检查推送结果
             docker image inspect "$new_image" \
               --format='Image ID: {{.Id}}, Size: {{.Size}}'
 
             echo "开始清理磁盘空间"
-            df -hT /var/lib/docker || df -hT
+            df -hT /
 
-            # 先删目标 tag，再删源镜像；加 || true 避免中断
             docker rmi "$new_image" || true
             docker rmi "$image" || true
-
-            # 清理构建缓存，防止缓存累积撑爆磁盘
             docker builder prune -f || true
 
             echo "磁盘空间清理完毕"
-            df -hT /var/lib/docker || df -hT
+            df -hT /
 
         done < images.txt
 
